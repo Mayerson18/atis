@@ -1,0 +1,71 @@
+@import "vars";
+@import "mixins";
+
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
+.fondo1{
+  background-color: $fondo1;
+}
+
+.active{
+  color: $active!important;
+}
+
+.center{
+  text-align: center;
+}
+
+.img-logo{
+  position: absolute;
+  top: 1px;
+  max-height: 112px;
+  z-index: 11;
+}
+
+.columns{
+  padding-left: 2em;
+}
+
+.main-pretitle{
+  @include textos(em(20px),500,$gris,initial);
+}
+
+.main-title{
+  @include textos(em(40px),900,$color-p,initial);
+  margin-bottom: 1.125em;
+}
+
+.main-content{
+  @include textos(em(17px),normal,$color-p,1.24);
+  margin-bottom: em(50px);
+}
+
+.ours-img{}
+
+.ours-title{
+  @include textos(em(40px),bold,$negro,initial);
+  text-align: center;
+}
+
+.ours-main{
+  @include textos(em(19px),normal,$color-p,1.63);
+}
+
+.pre-footer{
+  background-color: $pre-footer;
+  height: em(51px);
+}
+
+.foot{
+  height: em(266px);
+  background-color: $footer;
+  color: $blanco;
+  @include textos(em(16px),300,$blanco,initial);
+}
+
+.foot-title{
+  font-weight: bold;
+  margin-bottom: 1em;
+}

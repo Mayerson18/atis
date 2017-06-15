@@ -1,0 +1,76 @@
+//output:../index.html
+- var ours = [{img:"img/img2.png",title:"Our Service",p:"Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi consectetur. Curabitur at vestibulum nisi. Nullam vehicula nisi velit."},{img:"img/img3.png",title:"Our Clients",p:"Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi consectetur. Curabitur at vestibulum nisi. Nullam vehicula nisi velit."},{img:"img/img4.png",title:"Our Markets",p:"Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi consectetur. Curabitur at vestibulum nisi. Nullam vehicula nisi velit."}]
+- var p1 = "Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi consectetur. Curabitur at vestibulum nisi. Nullam vehicula nisi velit. Mauris turpis nisl, molestie ut ipsum et, suscipit vehicula odio. Vestibulum interdum vestibulum felis ac molestie. Praesent aliquet quam et libero dictum, vitae dignissim leo eleifend. In in turpis turpis. Quisque justo turpis, vestibulum non enim nec, tempor mollis mi. Sed vel tristique quam."
+- var p2 = "ccumsan. Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi consectetur. Curabitur at vestibulum nisi. Nullam vehicula nisi velit. Mauris turpis nisl, molestie ut ipsum et, suscipit vehicula odio. Vestibulum interdum vestibulum felis ac molestie. Praesent aliquet quam et libero dictum, vitae dignissim leo eleifend. In in turpis turpis. Quisque justo turpis, vestibulum non enim nec, tempor mollis mi. Sed vel tristique quam"
+- var p3 = "molestie. Praesent aliquet quam et libero dictum"
+- var p4 = "Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi consectetur. Curabitur at vestibulum nisi. Nullam vehicula nisi velit."
+
+mixin article(img,title,content)
+  .column.center
+    img(src=img,class="ours-img")
+    h2.ours-title=title
+    p.ours-content=content
+    if block
+      block
+    else
+      p No content provided
+      
+mixin as()
+  each val in ["Home","About","Product and Services","Contact Us"]
+    a.nav-item #{val}
+doctype
+html(lang="es_CO")
+  head
+    title="Atis"
+    meta(charset="utf8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet" href="sass/index.min.css")
+    link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto")
+    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.2/css/bulma.min.css")
+body
+  img(src="img/logo.png",alt="Atis",class="img-logo")
+  br
+  br
+  nav.nav
+    .nav-left
+      a.nav-item
+        
+    span.nav-toggle
+      each val in [1, 2, 3]
+        span
+    
+    .nav-right.nav-menu
+      +as()
+      a.nav-item.active Help us to help you better
+
+  img(src="img/banner.png",alt="ATIS",class="banner")
+  
+  .columns.fondo1
+    .column
+      p.main-pretitle nisi, quis iaculis nulla iaculis vitae. Donec sagittis faucibus
+      h1.main-title.mb-50 nisi, quis iaculis nulla iaculis 
+      p.main-content.mb-50 #{p1}
+      p.main-content.mb-50 #{p2}
+      p.main-content.mb-50 #{p3}
+    .column
+      img(src="img/img1.png")
+        
+  .columns
+    each val in ours
+      +article(val.img,val.title,val.p)
+      
+  .pre-footer
+    
+  footer.foot
+    .columns
+      .column.is-3
+        h5.foot-title About Us
+        p.foot-content #{p4}
+      .column
+        h5.foot-title Companies we Present
+        
+
+  
+script(src="https://code.jquery.com/jquery-3.2.1.min.js",integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=",crossorigin="anonymous")
+script(src="js/index.js")
+  
