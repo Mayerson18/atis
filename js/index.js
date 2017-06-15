@@ -7,3 +7,14 @@ $(".nav-toggle").click(function() {
     $(".nav-menu").children().addClass("r");
   }
 });
+
+$('.owl-carousel').owlCarousel({
+  nav: true,
+  items: 2,
+  margin: 56
+
+});
+
+$(".owl-prev").text("");
+$(".owl-next").text("");
+$(".owl-nav").removeClass("disabled");

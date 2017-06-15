@@ -1,0 +1,36 @@
+.inline{
+  display: inline-flex;
+}
+
+.avatar-cargo{
+  @include textos(em(20px),600!important,$cargo,initial);
+}
+
+.parallax{
+  position: relative;
+  top: 7px;
+}
+
+#owl-demo{
+  text-align: center;
+}
+
+.owl-next{
+  float: right;
+  background-image: url("../img/next.png")!important;
+  width: 52px;
+  height: 52px;
+  position: relative;
+  top: em(-288px);
+  //margin-right: 36px;
+}
+
+.owl-prev{
+  float: left;
+  background-image: url("../img/prev.png")!important;
+  width: 52px;
+  height: 52px;
+  position: relative;
+  top: em(-288px);
+  //margin-left: 36px;
+}
