@@ -1,0 +1,15 @@
+.numbers{
+
+  & > *{
+    width: 100%;
+    margin-bottom: em(20px);
+    padding-top: .5em;
+    @include textos(em(30px),300,$blanco,initial);
+    height: 70px;
+  }
+}
+
+.num1{background-color: $num1;}
+.num2{background-color: $num2;}
+.num3{background-color: $num3;}
+.num4{background-color: $num4;}

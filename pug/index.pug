@@ -14,39 +14,12 @@ mixin article(img,title,content)
       block
     else
       p No content provided
-      
-mixin as()
-  each val in ["Home","About","Product and Services","Contact Us"]
-    a.nav-item #{val}
-    
-mixin foot(x)
-  each val in x
-    .column
-      img(src="img/foot#{val}.png")
-doctype
-html(lang="es_CO")
-  head
-    title="Atis"
-    meta(charset="utf8")
-    meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    link(rel="stylesheet" href="sass/index.min.css")
-    link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto")
-    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.2/css/bulma.min.css")
-body
-  img(src="img/logo.png",alt="Atis",class="img-logo")
-  br
-  br
-  nav.nav
-    .nav-left
-      a.nav-item
         
-    span.nav-toggle
-      each val in [1, 2, 3]
-        span
-    
-    .nav-right.nav-menu
-      +as()
-      a.nav-item.active Help us to help you better
+include header.pug.jade
+
+body
+  
+  include nav.pug.jade
 
   img(src="img/banner.png",alt="ATIS",class="banner")
   
@@ -64,20 +37,7 @@ body
     each val in ours
       +article(val.img,val.title,val.p)
       
-  .pre-footer
-  footer.foot
-    .columns
-      .column.is-3
-        h5.foot-title About Us
-        p.foot-content #{p4}
-      .column
-        h5.foot-title Companies we Present  
-        .columns
-          +foot([1,2,3,4])
-        .columns
-          +foot([5,6,7,8])
-        
-
+  include footer.pug.jade
   
 script(src="https://code.jquery.com/jquery-3.2.1.min.js",integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=",crossorigin="anonymous")
 script(src="js/index.js")

@@ -9,10 +9,7 @@
 
 .main-content{
   @include textos(em(17px),normal,$color-p,1.24);
-  margin-bottom: em(50px);
 }
-
-.ours-img{}
 
 .ours-title{
   @include textos(em(40px),bold,$negro,initial);

@@ -1,0 +1,19 @@
+mixin as()
+  each val in ["Home","About","Product and Services","Contact Us"]
+    a.nav-item #{val}
+    
+//img(src="img/logo.png",alt="Atis",class="img-logo")
+br
+br
+br  
+nav.nav
+  .nav-left
+    a.nav-item
+      
+  span.nav-toggle
+    each val in [1, 2, 3]
+      span
+  
+  .nav-right.nav-menu
+    +as()
+    a.nav-item.active Help us to help you better

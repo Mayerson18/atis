@@ -1,0 +1,58 @@
+//output:../index3.html
+- var p1 = "Las relaciones duraderas comienzan desde el primer dia, y en ATIS RE, nos esforzamos por crear confianza en todos nuestos servicios desde el dia numero uno."
+- var p2 = "ccumsan. Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi consectetur. Curabitur at vestibulum nisi. Nullam vehicula nisi velit. Mauris turpis nisl, molestie ut ipsum et, suscipit vehicula odio. Vestibulum interdum vestibulum felis ac molestie. Praesent aliquet quam et libero dictum, vitae dignissim leo eleifend. In in turpis turpis. Quisque justo turpis, vestibulum non enim nec, tempor mollis mi. Sed vel tristique quam"
+- var p3 = "molestie. Praesent aliquet quam et libero dictum"
+- var p4 = "Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi consectetur. Curabitur at vestibulum nisi. Nullam vehicula nisi velit."
+
+//HTML COMPILADO CON PUG
+//LOS JSON SE RECOMIENDA ARMARLOS EN UN ARCHIVO APARTE Y MINIFICARLOS PARA USARLOS AQUI
+//OJO NO MODIFICAR MIXINS SOLO !!VARIABLES!!
+  
+
+    
+include header.pug.jade
+
+body
+  
+  include nav.pug.jade
+  img(src="img/banner3.png",alt="ATIS",class="banner",height="405px")
+    
+  .columns.countries
+    .column.paises
+      img(src="img/ecuador.png",alt="ATIS")
+      p.p-paises Ecuador
+    .column.paises
+      img(src="img/paraguay.png",alt="ATIS")
+      p.p-paises Paraguay
+    .column.paises
+      img(src="img/salvador.png",alt="ATIS")
+      p.p-paises El Salavador
+    .column.paises
+      img(src="img/honduras.png",alt="ATIS")
+      p.p-paises Honduras
+    .column.paises
+      img(src="img/nicaragua.png",alt="ATIS")
+      p.p-paises Nicaragua
+  
+  .columns
+    .column
+      h1.h1 Company
+      h2.subtitle.mision Mision 
+      p.main-content-v3.mb-50 #{p2}
+      h2.subtitle.vision Vision 
+      p.main-content-v3.mb-50 #{p2}
+      
+    .column
+      .objetives
+        h3.title-objetives.mb-50.ml-21 Objetives
+        p.p-objetives.mb-50.ml-21 #{p1}
+        p.p-objetives.mb-50.ml-21 #{p1}
+        p.p-objetives.mb-50.ml-21 #{p1}
+        p.p-objetives.mb-50.ml-21 #{p1}
+        
+  include contactenos.pug.jade
+              
+    
+  include footer.pug.jade
+  
+script(src="https://code.jquery.com/jquery-3.2.1.min.js",integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=",crossorigin="anonymous")

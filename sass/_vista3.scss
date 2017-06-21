@@ -1,0 +1,35 @@
+.paises{ display: -webkit-inline-box; }
+
+.countries{ padding: 0px 6em!important; }
+
+.p-paises{margin-left: 1em;}
+
+.h1{
+  @include textos(em(40px),bold!important,$negro,initial);
+}
+
+.main-content-v3{
+  @include textos(em(20px),300,$color-p,1.3);
+}
+
+.subtitle{
+  @include textos(em(40px),300,$negro,1.3);
+}
+
+.mision{border-bottom: solid 4px #bbd2b0;}
+
+.vision{border-bottom: solid 4px #4a6781;}
+
+.objetives{
+  background-image: linear-gradient(to right, #3e81bb, #224767);
+  padding-top: em(31px);
+  padding-bottom: em(1px);
+}
+
+.title-objetives{
+  @include textos(em(30px),bold,$blanco,initial);
+}
+
+.p-objetives{
+  @include textos(em(22px),normal,$blanco,1.41);
+}
