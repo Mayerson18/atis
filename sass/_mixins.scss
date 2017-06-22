@@ -8,3 +8,12 @@
 @function em($px){
   @return ($px / 16px) * 1em;
 }
+
+@mixin arrow($img,$dir,$px){
+  float: $dir;
+  background-image: url($img)!important;
+  width: 52px;
+  height: 52px;
+  position: relative;
+  top: $px;
+}

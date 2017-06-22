@@ -3,17 +3,25 @@
 - var p2 = "ccumsan. Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi consectetur. Curabitur at vestibulum nisi. Nullam vehicula nisi velit. Mauris turpis nisl, molestie ut ipsum et, suscipit vehicula odio. Vestibulum interdum vestibulum felis ac molestie. Praesent aliquet quam et libero dictum, vitae dignissim leo eleifend. In in turpis turpis. Quisque justo turpis, vestibulum non enim nec, tempor mollis mi. Sed vel tristique quam"
 - var p3 = "mod, id commodo mi consectetur. Curabitur at vestibulum nisi. Nullam vehicula nisi velit. Mauris turpis nisl, molestie ut ipsum et, suscipit vehicula odio. Vestibulum interdum vestibulum felis ac molestie. Praesent aliquet quam et libero dictum, vitae dignissim leo eleifend. In in turpis turpis. Quisque justo turpis, vestibulum non enim nec, tempor mollis mi. Sed vel tristique quam"
 - var p4 = "Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi consectetur. Curabitur at vestibulum nisi. Nullam vehicula nisi velit."
-
+- var json = [{img:"img/banner4.png",title:"Property & Catatrope"},{img:"img/banner3.png",title:"Property & Catatrope"},{img:"img/banner2.png",title:"Property & Catatrope"}]
 //HTML COMPILADO CON PUG
 //LOS JSON SE RECOMIENDA ARMARLOS EN UN ARCHIVO APARTE Y MINIFICARLOS PARA USARLOS AQUI
 //OJO NO MODIFICAR MIXINS SOLO !!VARIABLES!!       
+
+mixin carousel(x)
+  each val in x
+    .item
+      img(src="#{val.img}",alt="ATIS")
+      .title-banner.center #{val.title}
         
 include header.pug.jade
+link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css")
     
 body
   include nav.pug.jade
 
-  img(src="img/banner3.png",alt="ATIS",class="banner",height="405px")
+  #owl-demo2.owl-carousel
+    +carousel(json)
   
   .columns
     .column
@@ -29,9 +37,17 @@ body
         .num3 Elemento numero 3
         .num4 Elemento numero 4
       .business-card
-        
+        .left-business
+          h5.title-business Paola Valera
+          p.cargo-business Cargo de Paola
+          p.phone-business Telefono: 01298392 2
+          p.email-business Email: paola.valera@atisre.com
+        .right-business
+          p Contactar
         
   include contactenos.pug.jade
               
   include footer.pug.jade
 script(src="https://code.jquery.com/jquery-3.2.1.min.js",integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=",crossorigin="anonymous")
+script(src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js")
+script(src="js/index2.js")

@@ -13,3 +13,41 @@
 .num2{background-color: $num2;}
 .num3{background-color: $num3;}
 .num4{background-color: $num4;}
+
+.business-card{
+  display: flex;
+  justify-content: space-between;
+  background-image: linear-gradient(to right, $blanco, #294d6c);
+  padding: 1em;
+  border-radius: 22px;
+}
+
+.left-business{
+  & > h5{
+    @include textos(em(25px),900!important,$business,initial);
+  }
+  & > p{
+    @include textos(em(20px),300!important,$business,initial);
+  }
+}
+
+.right-business{
+  @include textos(em(30px),500!important,$blanco,initial);
+}
+
+.next1{
+  top: -52px!important;
+  left: 2em;
+}
+
+.prev1{
+  top: -52px!important;
+  right: 2em;
+}
+
+.title-banner{
+  @include textos(em(28px),bold!important,$blanco,initial);
+  background-color: #224767;
+  height: 64px;
+  padding-top: 0.55em;
+}

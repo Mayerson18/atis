@@ -8,12 +8,12 @@ $(".nav-toggle").click(function() {
   }
 });
 
-$('#owl-demo').owlCarousel({
+$('#owl-demo2').owlCarousel({
   nav: true,
-  items: 2,
-  margin: 56
+  items: 1,
+  margin: 0
 });
 
-$(".owl-prev").text("");
-$(".owl-next").text("");
+$(".owl-prev").addClass("next1").text("");
+$(".owl-next").addClass("prev1").text("");
 $(".owl-nav").removeClass("disabled");

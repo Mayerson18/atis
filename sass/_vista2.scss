@@ -16,21 +16,9 @@
 }
 
 .owl-next{
-  float: right;
-  background-image: url("../img/next.png")!important;
-  width: 52px;
-  height: 52px;
-  position: relative;
-  top: em(-288px);
-  //margin-right: 36px;
+  @include arrow("../img/next.png",right,-288px);
 }
 
 .owl-prev{
-  float: left;
-  background-image: url("../img/prev.png")!important;
-  width: 52px;
-  height: 52px;
-  position: relative;
-  top: em(-288px);
-  //margin-left: 36px;
+  @include arrow("../img/prev.png",left,-288px);
 }
