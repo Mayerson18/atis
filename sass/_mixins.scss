@@ -17,3 +17,10 @@
   position: relative;
   top: $px;
 }
+
+@mixin navs ($top,$url,$px){
+  top: $top!important;
+  background-image: url($url) !important;
+  width: $px;
+  background-repeat: no-repeat;
+}

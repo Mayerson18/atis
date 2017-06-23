@@ -36,18 +36,16 @@
 }
 
 .next1{
-  top: -52px!important;
-  left: 2em;
+  @include navs(-52px,"../img/izq.png",165px);
 }
 
 .prev1{
-  top: -52px!important;
-  right: 2em;
+  @include navs(-52px,"../img/der.png",165px);
 }
 
 .title-banner{
-  @include textos(em(28px),bold!important,$blanco,initial);
+  @include textos(em(32px),bold!important,$blanco,initial);
   background-color: #224767;
-  height: 64px;
-  padding-top: 0.55em;
+  height: 52px;
+  padding-top: .15em;
 }
