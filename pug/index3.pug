@@ -7,15 +7,15 @@
 //HTML COMPILADO CON PUG
 //LOS JSON SE RECOMIENDA ARMARLOS EN UN ARCHIVO APARTE Y MINIFICARLOS PARA USARLOS AQUI
 //OJO NO MODIFICAR MIXINS SOLO !!VARIABLES!!
-  
-
     
 include header.pug.jade
 
 body
-  
   include nav.pug.jade
   img(src="img/banner3.png",alt="ATIS",class="banner",height="405px")
+  div.fondo-v3
+    .in-fondo
+      h2 CORPORATE PROFILE 
     
   .columns.countries
     .column.paises
@@ -51,9 +51,7 @@ body
         p.p-objetives.mb-50.ml-21 #{p1}
         
   include contactenos.pug.jade
-              
-    
   include footer.pug.jade
   
 script(src="https://code.jquery.com/jquery-3.2.1.min.js",integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=",crossorigin="anonymous")
-  script(src="js/index.js")
+script(src="js/index.js")

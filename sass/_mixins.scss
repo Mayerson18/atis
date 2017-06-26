@@ -24,3 +24,15 @@
   width: $px;
   background-repeat: no-repeat;
 }
+
+@mixin fondo ($height,$url,$align1,$align2,$color){
+  height: $height;
+  background-image: url($url);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content:$align1;
+  align-items:$align2;
+  color: $color;
+}
