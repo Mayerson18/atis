@@ -12,21 +12,21 @@ body{
 }
 
 .fondo{
-  @include fondo(375px,"../img/banner.png",center,center,$blanco);
+  @include fondo(375px,"../img/banner.jpg",center,center,$blanco);
 }
 
 .fondo-v2{
-  @include fondo(375px,"../img/banner2.png",flex-start,flex-end,$blanco);
+  @include fondo(375px,"../img/banner2.jpg",flex-start,flex-end,$blanco);
   padding: 0px 0px 2em 7em;
 }
 
 .fondo-v3{
-  @include fondo(375px,"../img/banner3.png",flex-start,flex-end,$blanco);
+  @include fondo(375px,"../img/banner3.jpg",flex-start,flex-end,$blanco);
   padding: 0px 0px 2em 7em;
 }
 
 .fondo-v4{
-  @include fondo(375px,"../img/banner4.png",center,center,$blanco);
+  @include fondo(375px,"../img/banner4.jpg",center,center,$blanco);
 }
 
 .in-fondo{
@@ -56,6 +56,7 @@ body{
   top: 1px;
   max-height: 112px;
   z-index: 11;
+  left: 7%;
 }
 
 .columns{

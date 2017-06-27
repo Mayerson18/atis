@@ -22,3 +22,56 @@
 .owl-prev{
   @include arrow("../img/prev.png",left,-288px);
 }
+
+.line{
+  margin-top: 4em;
+}
+
+.img-center{
+  display: flex;
+  justify-content: center;
+  & > img{
+    width: inherit!important;
+  }
+}
+
+.parallax{
+  background-image: url("../img/parallax.png");
+  height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  .in-parallax{
+    & > h1{
+      @include textos(em(40px),bold,$blanco,initial);
+    }
+    & > h2{
+      @include textos(em(25px),normal,$blanco,initial);
+    }
+  }
+  .p-container{
+    display: flex;
+    justify-content: center;
+    & > p{
+      @include textos(em(23px),300,$blanco,initial);
+      width: 70%;
+    }
+  }
+}
+
+.raya-container{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1em;
+}
+
+.raya{
+  border-bottom: solid .2em $blanco;
+  height: 50px;
+  width: 50%;
+  min-width: 300px;
+}

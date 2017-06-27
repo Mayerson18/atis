@@ -3,7 +3,8 @@
 - var p2 = "ccumsan. Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi consectetur. Curabitur at vestibulum nisi. Nullam vehicula nisi velit. Mauris turpis nisl, molestie ut ipsum et, suscipit vehicula odio. Vestibulum interdum vestibulum felis ac molestie. Praesent aliquet quam et libero dictum, vitae dignissim leo eleifend. In in turpis turpis. Quisque justo turpis, vestibulum non enim nec, tempor mollis mi. Sed vel tristique quam"
 - var p3 = "molestie. Praesent aliquet quam et libero dictum"
 - var p4 = "Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi consectetur. Curabitur at vestibulum nisi. Nullam vehicula nisi velit."
-- var avatar = [{img:"img/avatar.png",name:"Paola Valera",cargo:"CEO & CO-FOUNDER",p:[p1,p4]},{img:"img/avatar.png",name:"Paola Claudia",cargo:"CEO & CO-FOUNDER",p:[p1,p3]},{img:"img/avatar.png",name:"Paola Claudia",cargo:"CEO & CO-FOUNDER",p:[p1,p3]}]
+- var p5 = "Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor. Pellentesque non dignissim neque. Ut porta viverra est, ut dignissim elit elementum ut"
+- var avatar = [{img:"img/avatar1.jpg",name:"Paola Valera",cargo:"CEO & CO-FOUNDER",p:[p1,p4]},{img:"img/avatar2.jpg",name:"Paola Claudia",cargo:"CEO & CO-FOUNDER",p:[p1,p3]},{img:"img/avatar2.jpg",name:"Paola Claudia",cargo:"CEO & CO-FOUNDER",p:[p1,p3]}]
 
 //HTML COMPILADO CON PUG
 //LOS JSON SE RECOMIENDA ARMARLOS EN UN ARCHIVO APARTE Y MINIFICARLOS PARA USARLOS AQUI
@@ -15,7 +16,8 @@ mixin ps(p)
 
 mixin avatar(img,title,content,p)
   .item
-    img(src="#{img}")
+    .img-center
+      img(src="#{img}")
     h1.avatar-title.ours-title #{title}
     h3.avatar-cargo #{content}
     +ps(p)
@@ -24,17 +26,16 @@ include header.pug.jade
     link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css")
 body
   include nav.pug.jade
-
-  img(src="img/banner2.png",alt="ATIS",class="banner",height="405px")
   div.fondo-v2
     .in-fondo
       h2 Our Team
       p Nam porttitor blandit accumsan, Ut vel dictum sem, a pretium dui. In malesuada enim
   
+  br
   .columns
     .column.is-4
       .inline
-        img(src="img/avatar.png")
+        img(src="img/avatar1.jpg")
         .line
           h1.avatar-title.ours-title Norma Mejinvar
           h3.avatar-cargo CEO & CO-FOUNDER
@@ -47,7 +48,14 @@ body
         each val in avatar
           +avatar(val.img,val.name,val.cargo,val.p)
         
-  img(src="img/parallax.png", class="parallax")
+  .parallax
+    .in-parallax
+      h1 NORMA MEJINVAR
+      h2 Presidente y Fundadora de ATIS RE
+      .raya-container
+        .raya
+      .p-container
+        p #{p5}
   include footer.pug.jade
 
   
