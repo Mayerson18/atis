@@ -19,3 +19,11 @@
 .ours-main{
   @include textos(em(19px),normal,$color-p,1.63);
 }
+
+.next2{
+  @include navs(-203px,"../img/prev.png",165px);
+}
+
+.prev2{
+  @include navs(-203px,"../img/next.png",165px);
+}

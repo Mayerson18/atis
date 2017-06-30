@@ -16,14 +16,21 @@ mixin article(img,title,content)
       p No content provided
         
 include header.pug.jade
-
+    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css")
 body
   
   include nav.pug.jade
-  div.fondo
-    .in-fondo
-      h2 Assurance, Transparency, Integrirt, Service
-      p Nam porttitor blandit accumsan, Ut vel dictum sem, a pretium dui. In malesuada enim
+  #owl-home.owl-carousel
+    .item
+      .fondo
+        .in-fondo
+          h2 Assurance, Transparency, Integrirt, Service
+          p Nam porttitor blandit accumsan, Ut vel dictum sem, a pretium dui. In malesuada enim
+    .item
+      .fondo-v2
+        .in-fondo
+          h2 Our Team
+          p Nam porttitor blandit accumsan, Ut vel dictum sem, a pretium dui. In malesuada enim
     
   .columns.fondo1
     .column
@@ -41,5 +48,7 @@ body
       
   include footer.pug.jade
   
-script(src="https://code.jquery.com/jquery-3.2.1.min.js",integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=",crossorigin="anonymous")
+script(src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous")
+script(src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js")
 script(src="js/index.js")
+script(src="js/carrusel-home.js")
