@@ -11,7 +11,9 @@ $(".nav-toggle").click(function() {
 $('#owl-demo2').owlCarousel({
   nav: true,
   items: 1,
-  margin: 0
+  margin: 0,
+  URLhashListener:true,
+  startPosition: 'URLHash'
 });
 
 $(".owl-prev").addClass("next1").text("");
