@@ -2,6 +2,11 @@
   display: inline-flex;
 }
 
+.post-title{
+  @include textos(em(20px),bold,$blanco,initial);
+  margin-bottom: 1em;
+}
+
 .avatar-cargo{
   @include textos(em(20px),600!important,$cargo,initial);
 }

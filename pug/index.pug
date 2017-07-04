@@ -7,8 +7,6 @@
 - var p1 = "ATIS Re Corp. was founded on the solid terms of assurance, transparency, integrity and service by a team of reinsurance experts who made their names by delivering great service to the industry. Our simple philosophy is to take every opportunity to heart, and never lose sight of the fact that lasting relationships are formed from day one. Each of our team members has earned and kept the trust in the industry by remaining true to the values we stand for, that is what makes us different…"
 - var p2 = "Being a full-service reinsurance intermediary brokers company, Atis re provides a valuable support, helping its clients to grow their business, implementing & managing their risk, increasing the profitability of their portfolios through the strategic efforts of their technical experts, and with the support of leading global reinsurers companies. Atis re is a fully accredited and licensed Reinsurance Intermediary Broker with a team that has over 70 years of combined experience.   We have the ability to meet and exceed our customers' expectations, and our team is dedicated to provide exceptional customer service tailored to exceed your placements chain needs, all while providing complete consulting service, being innovators, accommodating to any size or complexity, those are only few of the advantage of working with us."
 - var p3 = "Don’t wait any longer and experience the ATIS Advantage…"
-- var p4 = "Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi consectetur. Curabitur at vestibulum nisi. Nullam vehicula nisi velit."
-
 
 mixin article(img,title,content)
   .column.center
@@ -19,11 +17,11 @@ mixin article(img,title,content)
 include header.pug.jade
     link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css")
 body
-  
+
   include nav.pug.jade
   #owl-home.owl-carousel
     include items.pug.jade
-    
+  div(style="background-color: #f3f9f1;height:65px;")
   .columns.fondo1
     .column
       h1.main-title ATIS Re Corp.
