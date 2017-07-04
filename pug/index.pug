@@ -1,9 +1,14 @@
 //output:../index.html
-- var ours = [{img:"img/img2.png",title:"Our Service",p:"Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi consectetur. Curabitur at vestibulum nisi. Nullam vehicula nisi velit."},{img:"img/img3.png",title:"Our Clients",p:"Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi consectetur. Curabitur at vestibulum nisi. Nullam vehicula nisi velit."},{img:"img/img4.png",title:"Our Markets",p:"Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi consectetur. Curabitur at vestibulum nisi. Nullam vehicula nisi velit."}]
-- var p1 = "Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi consectetur. Curabitur at vestibulum nisi. Nullam vehicula nisi velit. Mauris turpis nisl, molestie ut ipsum et, suscipit vehicula odio. Vestibulum interdum vestibulum felis ac molestie. Praesent aliquet quam et libero dictum, vitae dignissim leo eleifend. In in turpis turpis. Quisque justo turpis, vestibulum non enim nec, tempor mollis mi. Sed vel tristique quam."
-- var p2 = "ccumsan. Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi consectetur. Curabitur at vestibulum nisi. Nullam vehicula nisi velit. Mauris turpis nisl, molestie ut ipsum et, suscipit vehicula odio. Vestibulum interdum vestibulum felis ac molestie. Praesent aliquet quam et libero dictum, vitae dignissim leo eleifend. In in turpis turpis. Quisque justo turpis, vestibulum non enim nec, tempor mollis mi. Sed vel tristique quam"
-- var p3 = "molestie. Praesent aliquet quam et libero dictum"
+- var p_ours1 = "Our team has one goal – to provide the very best service in the industry. Whether it’s negotiating an endorsement, handling claims, or developing innovative ways to process your reinsurance service needs, ATIS RE is committed to make your experience as convenient as possible."
+- var p_ours2 = "Our clients are at the core of our success. We are very proud of the work we do. This is represented in our function, and how our clients think about us. We offer a partnership approach, delivering options built in our client’s specific needs. We are intimately involved every step of the way to ensure our clients are well protected and well served."
+- var p_ours3 = "We boast strong, forthright relationships with global leading insurance companies, but are beholden to none. We invite these trusted partners to compete for your business in order to bring you the most competitive and comprehensive insurance options."
+- var ours = [{img:"img/img2.png",title:"Our Service",p:p_ours1},{img:"img/img3.png",title:"Our Clients",p:p_ours2},{img:"img/img4.png",title:"Our Markets",p:p_ours3}]
+- var p_pretitle = "was founded on the solid terms of assurance, transparency, integrity and service by a team of reinsurance experts who made their names by delivering great service to the industry"
+- var p1 = "ATIS Re Corp. was founded on the solid terms of assurance, transparency, integrity and service by a team of reinsurance experts who made their names by delivering great service to the industry. Our simple philosophy is to take every opportunity to heart, and never lose sight of the fact that lasting relationships are formed from day one. Each of our team members has earned and kept the trust in the industry by remaining true to the values we stand for, that is what makes us different…"
+- var p2 = "Being a full-service reinsurance intermediary brokers company, Atis re provides a valuable support, helping its clients to grow their business, implementing & managing their risk, increasing the profitability of their portfolios through the strategic efforts of their technical experts, and with the support of leading global reinsurers companies. Atis re is a fully accredited and licensed Reinsurance Intermediary Broker with a team that has over 70 years of combined experience.   We have the ability to meet and exceed our customers' expectations, and our team is dedicated to provide exceptional customer service tailored to exceed your placements chain needs, all while providing complete consulting service, being innovators, accommodating to any size or complexity, those are only few of the advantage of working with us."
+- var p3 = "Don’t wait any longer and experience the ATIS Advantage…"
 - var p4 = "Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi consectetur. Curabitur at vestibulum nisi. Nullam vehicula nisi velit."
+
 
 mixin article(img,title,content)
   .column.center
@@ -21,21 +26,12 @@ body
   
   include nav.pug.jade
   #owl-home.owl-carousel
-    .item
-      .fondo
-        .in-fondo
-          h2 Assurance, Transparency, Integrirt, Service
-          p Nam porttitor blandit accumsan, Ut vel dictum sem, a pretium dui. In malesuada enim
-    .item
-      .fondo-v2
-        .in-fondo
-          h2 Our Team
-          p Nam porttitor blandit accumsan, Ut vel dictum sem, a pretium dui. In malesuada enim
+    include items.pug.jade
     
   .columns.fondo1
     .column
-      p.main-pretitle nisi, quis iaculis nulla iaculis vitae. Donec sagittis faucibus
-      h1.main-title.mb-50 nisi, quis iaculis nulla iaculis 
+      h1.main-title.mb-50 ATIS Re Corp.
+      p.main-pretitle.mb-50 #{p_pretitle}
       p.main-content.mb-50 #{p1}
       p.main-content.mb-50 #{p2}
       p.main-content.mb-50 #{p3}

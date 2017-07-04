@@ -1,0 +1,14 @@
+- var item1 = {class:"fondo",title:"Assurance",content:p3}
+- var item2 = {class:"fondo-v2",title:"Transparency",content:p3}
+- var item3 = {class:"fondo-v3",title:"Integrity",content:p3}
+- var item4 = {class:"fondo",title:"Service",content:p3}
+- var items = [item1,item2,item3,item4]
+mixin items(className,title,content)
+  .item
+    div(class="#{className}")
+      .in-fondo
+        h2 #{title}
+        p #{content}
+        
+each val in items
+  +items(val.class,val.title,val.content)
