@@ -15,10 +15,6 @@ mixin article(img,title,content)
     img(src=img,class="ours-img")
     h2.ours-title=title
     p.ours-content=content
-    if block
-      block
-    else
-      p No content provided
         
 include header.pug.jade
     link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css")

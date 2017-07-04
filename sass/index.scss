@@ -12,7 +12,8 @@ body{
 }
 
 .fondo{
-  @include fondo(375px,"../img/banner.jpg",center,center,$blanco);
+  @include fondo(375px,"../img/banner.jpg",flex-start,center,$blanco);
+  padding-left: 10%;
 }
 
 .fondo-v2{
@@ -39,7 +40,12 @@ body{
   }
 }
 
-.fondo1{ background-color: $fondo1; }
+.fondo1{
+  background-color: $fondo1;
+  position: relative;
+  top: -3.25em;
+  padding-top: 2em;
+}
 
 .active{ color: $active!important; }
 
