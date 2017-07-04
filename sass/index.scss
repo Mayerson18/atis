@@ -39,17 +39,17 @@ body{
   }
 }
 
-.fondo1{
-  background-color: $fondo1;
+.fondo1{ background-color: $fondo1; }
+
+.active{ color: $active!important; }
+
+.flex-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.active{
-  color: $active!important;
-}
-
-.center{
-  text-align: center;
-}
+.center{  text-align: center; }
 
 .img-logo{
   position: absolute;
