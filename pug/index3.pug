@@ -17,12 +17,12 @@
 //LOS JSON SE RECOMIENDA ARMARLOS EN UN ARCHIVO APARTE Y MINIFICARLOS PARA USARLOS AQUI
 //OJO NO MODIFICAR MIXINS SOLO !!VARIABLES!!
 
-mixin p(title,p)
+mixin p(title,p,animation)
   h4.post-title.ml-21 #{title}
-  p.p-objetives.mb-25.ml-21 #{p}
+  p.p-objetives.mb-25.ml-21.ani(data-anijs="if: mouseout, do: #{animation} animated") #{p}
     
 include header.pug.jade
-
+    link(rel="stylesheet" href="http://anijs.github.io/lib/anicollection/anicollection.css")
 body
   include nav.pug.jade
   div.fondo-v3
@@ -49,31 +49,32 @@ body
   .columns
     .column
       h2.h1 Why Choose Us
-      p.main-content-v3.mb-25 #{pl1}
+      p.main-content-v3.mb-25(data-anijs="if: mouseover, do: bounceInRight animated, to: .ani") #{pl1}
       h2.subtitle.mision Flexible 
-      p.main-content-v3.mb-25 #{pl2}
+      p.main-content-v3.mb-25(data-anijs="if: mouseover, do: bounceInRight animated, to: .ani") #{pl2}
       h2.subtitle.vision We're innovators 
-      p.main-content-v3.mb-25 #{pl3}
+      p.main-content-v3.mb-25(data-anijs="if: mouseover, do: fadeInRight animated, to: .ani") #{pl3}
       h2.subtitle.mision Customer service 
-      p.main-content-v3.mb-25 #{pl4}
+      p.main-content-v3.mb-25(data-anijs="if: mouseover, do: fadeInRight animated, to: .ani") #{pl4}
       h2.subtitle.vision Stability 
-      p.main-content-v3.mb-25 #{pl5}
+      p.main-content-v3.mb-25(data-anijs="if: mouseover, do: zoomInRight animated, to: .ani") #{pl5}
       h2.subtitle.mision  Time Zone and Language 
-      p.main-content-v3.mb-25 #{pl6}
+      p.main-content-v3.mb-25(data-anijs="if: mouseover, do: zoomInRight animated, to: .ani") #{pl6}
       h2.subtitle.vision Experience and Reputation 
-      p.main-content-v3.mb-25 #{pl7}
-      p.main-content-v3.mb-25 #{pl8}
+      p.main-content-v3.mb-25(data-anijs="if: mouseover, do: flash animated, to: .ani") #{pl7}
+      p.main-content-v3.mb-25(data-anijs="if: mouseover, do: flash animated, to: .ani") #{pl8}
       
     .column
       .objetives
         h3.title-objetives.mb-25.ml-21 OUR VALUES
-        +p("Assurance",pr1)
-        +p("Transparency",pr2)
-        +p("Integrity",pr3)
-        +p("Service",pr4)
+        +p("Assurance",pr1,"bounceInRight")
+        +p("Transparency",pr2,"fadeInRight")
+        +p("Integrity",pr3,"zoomInRight")
+        +p("Service",pr4,"flash")
         
   include contactenos.pug.jade
   include footer.pug.jade
   
 script(src="https://code.jquery.com/jquery-3.2.1.min.js",integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=",crossorigin="anonymous")
+script(src="https://cdnjs.cloudflare.com/ajax/libs/AniJS/0.9.3/anijs-min.js")
 script(src="js/index.js")
