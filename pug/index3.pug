@@ -17,9 +17,9 @@
 //LOS JSON SE RECOMIENDA ARMARLOS EN UN ARCHIVO APARTE Y MINIFICARLOS PARA USARLOS AQUI
 //OJO NO MODIFICAR MIXINS SOLO !!VARIABLES!!
 
-mixin p(title,p,animation)
+mixin p(title,p,animation,classname)
   h4.post-title.ml-21 #{title}
-  p.p-objetives.mb-25.ml-21.ani(data-anijs="if: mouseout, do: #{animation} animated") #{p}
+  p.p-objetives.mb-25.ml-21(class="#{classname}" data-anijs="if: mouseout, do: #{animation} animated") #{p}
     
 include header.pug.jade
     link(rel="stylesheet" href="http://anijs.github.io/lib/anicollection/anicollection.css")
@@ -49,28 +49,28 @@ body
   .columns
     .column
       h2.h1 Why Choose Us
-      p.main-content-v3.mb-25(data-anijs="if: mouseover, do: bounceInRight animated, to: .ani") #{pl1}
+      p.main-content-v3.mb-25(data-anijs="if: mouseover, do: fadeInRight animated, to: .as") #{pl1}
       h2.subtitle.mision Flexible 
-      p.main-content-v3.mb-25(data-anijs="if: mouseover, do: bounceInRight animated, to: .ani") #{pl2}
+      p.main-content-v3.mb-25(data-anijs="if: mouseover, do: fadeInRight animated, to: .as") #{pl2}
       h2.subtitle.vision We're innovators 
-      p.main-content-v3.mb-25(data-anijs="if: mouseover, do: fadeInRight animated, to: .ani") #{pl3}
+      p.main-content-v3.mb-25(data-anijs="if: mouseover, do: fadeInRight animated, to: .tra") #{pl3}
       h2.subtitle.mision Customer service 
-      p.main-content-v3.mb-25(data-anijs="if: mouseover, do: fadeInRight animated, to: .ani") #{pl4}
+      p.main-content-v3.mb-25(data-anijs="if: mouseover, do: fadeInRight animated, to: .tra") #{pl4}
       h2.subtitle.vision Stability 
-      p.main-content-v3.mb-25(data-anijs="if: mouseover, do: zoomInRight animated, to: .ani") #{pl5}
+      p.main-content-v3.mb-25(data-anijs="if: mouseover, do: fadeInRight animated, to: .int") #{pl5}
       h2.subtitle.mision  Time Zone and Language 
-      p.main-content-v3.mb-25(data-anijs="if: mouseover, do: zoomInRight animated, to: .ani") #{pl6}
+      p.main-content-v3.mb-25(data-anijs="if: mouseover, do: fadeInRight animated, to: .int") #{pl6}
       h2.subtitle.vision Experience and Reputation 
-      p.main-content-v3.mb-25(data-anijs="if: mouseover, do: flash animated, to: .ani") #{pl7}
-      p.main-content-v3.mb-25(data-anijs="if: mouseover, do: flash animated, to: .ani") #{pl8}
+      p.main-content-v3.mb-25(data-anijs="if: mouseover, do: fadeInRight animated, to: .ser") #{pl7}
+      p.main-content-v3.mb-25(data-anijs="if: mouseover, do: fadeInRight animated, to: .ser") #{pl8}
       
     .column
       .objetives
         h3.title-objetives.mb-25.ml-21 OUR VALUES
-        +p("Assurance",pr1,"bounceInRight")
-        +p("Transparency",pr2,"fadeInRight")
-        +p("Integrity",pr3,"zoomInRight")
-        +p("Service",pr4,"flash")
+        +p("Assurance",pr1,"fadeInRight","as")
+        +p("Transparency",pr2,"fadeInRight","tra")
+        +p("Integrity",pr3,"fadeInRight","int")
+        +p("Service",pr4,"fadeInRight","ser")
         
   include contactenos.pug.jade
   include footer.pug.jade
