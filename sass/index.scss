@@ -11,6 +11,10 @@ body{
   font-family: 'Roboto', sans-serif;
 }
 
+.hid{
+  visibility: hidden;
+}
+
 .fondo{
   @include fondo(375px,"../img/banner.jpg",flex-start,center,$blanco);
   padding-left: 10%;

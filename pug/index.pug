@@ -16,29 +16,29 @@ mixin article(img,title,content)
         
 include header.pug.jade
     link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css")
-body
+  body
 
-  include nav.pug.jade
-  #owl-home.owl-carousel
-    include items.pug.jade
-  div(style="background-color: #f3f9f1;height:65px;")
-  .columns.fondo1
-    .column
-      h1.main-title ATIS Re Corp.
-      p.main-pretitle.mb-25 #{p_pretitle}
-      p.main-content.mb-25 #{p1}
-      p.main-content.mb-25 #{p2}
-      p.main-content.mb-25 #{p3}
-    .column.flex-center
-      img(src="img/img1.png")
+    include nav.pug.jade
+    #owl-home.owl-carousel
+      include items.pug.jade
+    div(style="background-color: #f3f9f1;height:65px;")
+    .columns.fondo1
+      .column
+        h1.main-title ATIS Re Corp.
+        p.main-pretitle.mb-25 #{p_pretitle}
+        p.main-content.mb-25 #{p1}
+        p.main-content.mb-25 #{p2}
+        p.main-content.mb-25 #{p3}
+      .column.flex-center
+        img(src="img/img1.png")
+          
+    .columns
+      each val in ours
+        +article(val.img,val.title,val.p)
         
-  .columns
-    each val in ours
-      +article(val.img,val.title,val.p)
-      
-  include footer.pug.jade
-  
-script(src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous")
-script(src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js")
-script(src="js/index.js")
-script(src="js/carrusel-home.js")
+    include footer.pug.jade
+    
+    script(src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js")
+    script(src="js/index.js")
+    script(src="js/carrusel-home.js")

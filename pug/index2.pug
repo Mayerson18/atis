@@ -24,41 +24,41 @@ mixin avatar(img,title,content,p)
           
 include header.pug.jade
     link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css")
-body
-  include nav.pug.jade
-  div.fondo-v2
-    .in-fondo
-      h2 Our Team
-      p Nam porttitor blandit accumsan, Ut vel dictum sem, a pretium dui. In malesuada enim
-  
-  br
-  .columns
-    .column.is-4
-      .inline
-        img(src="img/avatar1.jpg")
-        .line
-          h1.avatar-title.ours-title Norma Mejinvar
-          h3.avatar-cargo CEO & CO-FOUNDER
-      p.main-content.mb-50 #{p1}
-      p.main-content.mb-50 #{p2}
-      p.main-content.mb-50 #{p3}
-      
-    .column
-      #owl-demo.owl-carousel
-        each val in avatar
-          +avatar(val.img,val.name,val.cargo,val.p)
+  body
+    include nav.pug.jade
+    div.fondo-v2
+      .in-fondo
+        h2 Our Team
+        p Nam porttitor blandit accumsan, Ut vel dictum sem, a pretium dui. In malesuada enim
+    
+    br
+    .columns
+      .column.is-4
+        .inline
+          img(src="img/avatar1.jpg")
+          .line
+            h1.avatar-title.ours-title Norma Mejinvar
+            h3.avatar-cargo CEO & CO-FOUNDER
+        p.main-content.mb-50 #{p1}
+        p.main-content.mb-50 #{p2}
+        p.main-content.mb-50 #{p3}
         
-  .parallax
-    .in-parallax
-      h1 NORMA MEJINVAR
-      h2 Presidente y Fundadora de ATIS RE
-      .raya-container
-        .raya
-      .p-container
-        p #{p5}
-  include footer.pug.jade
+      .column
+        #owl-demo.owl-carousel
+          each val in avatar
+            +avatar(val.img,val.name,val.cargo,val.p)
+          
+    .parallax
+      .in-parallax
+        h1 NORMA MEJINVAR
+        h2 Presidente y Fundadora de ATIS RE
+        .raya-container
+          .raya
+        .p-container
+          p #{p5}
+    include footer.pug.jade
 
-  
-script(src="https://code.jquery.com/jquery-3.2.1.min.js",integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=",crossorigin="anonymous")
-script(src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js")
-script(src="js/index.js")
+    
+    script(src="https://code.jquery.com/jquery-3.2.1.min.js",integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=",crossorigin="anonymous")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js")
+    script(src="js/index.js")

@@ -19,62 +19,64 @@
 
 mixin p(title,p,animation,classname)
   h4.post-title.ml-21 #{title}
-  p.p-objetives.mb-25.ml-21(class="#{classname}" data-anijs="if: mouseout, do: #{animation} animated") #{p}
+  p.p-objetives.mb-25.ml-21(class="#{classname}" data-anijs="if: scroll, on: window, do: #{animation} animated, before: $scrollReveal") #{p}
+  //p.p-objetives.mb-25.ml-21.hid(class="#{classname}" data-anijs="if: scroll, do: #{animation} animated,to: .as") #{p}
     
 include header.pug.jade
     link(rel="stylesheet" href="http://anijs.github.io/lib/anicollection/anicollection.css")
-body
-  include nav.pug.jade
-  div.fondo-v3
-    .in-fondo
-      h2 CORPORATE PROFILE 
-    
-  .columns.countries
-    .column.paises
-      img(src="img/ecuador.png",alt="ATIS")
-      p.p-paises Ecuador
-    .column.paises
-      img(src="img/paraguay.png",alt="ATIS")
-      p.p-paises Paraguay
-    .column.paises
-      img(src="img/salvador.png",alt="ATIS")
-      p.p-paises El Salavador
-    .column.paises
-      img(src="img/honduras.png",alt="ATIS")
-      p.p-paises Honduras
-    .column.paises
-      img(src="img/nicaragua.png",alt="ATIS")
-      p.p-paises Nicaragua
-  
-  .columns
-    .column
-      h2.h1 Why Choose Us
-      p.main-content-v3.mb-25(data-anijs="if: mouseover, do: fadeInRight animated, to: .as") #{pl1}
-      h2.subtitle.mision Flexible 
-      p.main-content-v3.mb-25(data-anijs="if: mouseover, do: fadeInRight animated, to: .as") #{pl2}
-      h2.subtitle.vision We're innovators 
-      p.main-content-v3.mb-25(data-anijs="if: mouseover, do: fadeInRight animated, to: .tra") #{pl3}
-      h2.subtitle.mision Customer service 
-      p.main-content-v3.mb-25(data-anijs="if: mouseover, do: fadeInRight animated, to: .tra") #{pl4}
-      h2.subtitle.vision Stability 
-      p.main-content-v3.mb-25(data-anijs="if: mouseover, do: fadeInRight animated, to: .int") #{pl5}
-      h2.subtitle.mision  Time Zone and Language 
-      p.main-content-v3.mb-25(data-anijs="if: mouseover, do: fadeInRight animated, to: .int") #{pl6}
-      h2.subtitle.vision Experience and Reputation 
-      p.main-content-v3.mb-25(data-anijs="if: mouseover, do: fadeInRight animated, to: .ser") #{pl7}
-      p.main-content-v3.mb-25(data-anijs="if: mouseover, do: fadeInRight animated, to: .ser") #{pl8}
+  body
+    include nav.pug.jade
+    div.fondo-v3
+      .in-fondo
+        h2 CORPORATE PROFILE 
       
-    .column
-      .objetives
-        h3.title-objetives.mb-25.ml-21 OUR VALUES
-        +p("Assurance",pr1,"fadeInRight","as")
-        +p("Transparency",pr2,"fadeInRight","tra")
-        +p("Integrity",pr3,"fadeInRight","int")
-        +p("Service",pr4,"fadeInRight","ser")
+    .columns.countries(data-anijs="if: scroll, do: fadeInRight animated, to: .as")
+      .column.paises
+        img(src="img/ecuador.png",alt="ATIS")
+        p.p-paises Ecuador
+      .column.paises
+        img(src="img/paraguay.png",alt="ATIS")
+        p.p-paises Paraguay
+      .column.paises
+        img(src="img/salvador.png",alt="ATIS")
+        p.p-paises El Salavador
+      .column.paises
+        img(src="img/honduras.png",alt="ATIS")
+        p.p-paises Honduras
+      .column.paises
+        img(src="img/nicaragua.png",alt="ATIS")
+        p.p-paises Nicaragua
+    
+    .columns
+      .column
+        h2.h1 Why Choose Us
+        p.main-content-v3.mb-25 #{pl1}
+        h2.subtitle.mision Flexible 
+        p.main-content-v3.mb-25 #{pl2}
+        h2.subtitle.vision We're innovators 
+        p.main-content-v3.mb-25 #{pl3}
+        h2.subtitle.mision Customer service 
+        p.main-content-v3.mb-25 #{pl4}
+        h2.subtitle.vision Stability 
+        p.main-content-v3.mb-25 #{pl5}
+        h2.subtitle.mision  Time Zone and Language 
+        p.main-content-v3.mb-25 #{pl6}
+        h2.subtitle.vision Experience and Reputation 
+        p.main-content-v3.mb-25 #{pl7}
+        p.main-content-v3.mb-25 #{pl8}
         
-  include contactenos.pug.jade
-  include footer.pug.jade
-  
-script(src="https://code.jquery.com/jquery-3.2.1.min.js",integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=",crossorigin="anonymous")
-script(src="https://cdnjs.cloudflare.com/ajax/libs/AniJS/0.9.3/anijs-min.js")
-script(src="js/index.js")
+      .column
+        .objetives
+          h3.title-objetives.mb-25.ml-21 OUR VALUES
+          +p("Assurance",pr1,"fadeInRight","as")
+          +p("Transparency",pr2,"fadeInRight","tra")
+          +p("Integrity",pr3,"fadeInRight","int")
+          +p("Service",pr4,"fadeInRight","ser")
+          
+    include contactenos.pug.jade
+    include footer.pug.jade
+    
+    script(src="https://code.jquery.com/jquery-3.2.1.min.js",integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=",crossorigin="anonymous")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/AniJS/0.9.3/anijs-min.js")
+    script(src="js/index.js")
+    script(src="https://anijs.github.io/lib/anijs/helpers/scrollreveal/anijs-helper-scrollreveal.js")
