@@ -4,7 +4,7 @@
 - var p3 = "molestie. Praesent aliquet quam et libero dictum"
 - var p4 = "Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi consectetur. Curabitur at vestibulum nisi. Nullam vehicula nisi velit."
 - var p5 = "Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor. Pellentesque non dignissim neque. Ut porta viverra est, ut dignissim elit elementum ut"
-- var avatar = [{img:"img/avatar1.jpg",name:"Paola Valera",cargo:"CEO & CO-FOUNDER",p:[p1,p4]},{img:"img/avatar2.jpg",name:"Paola Claudia",cargo:"CEO & CO-FOUNDER",p:[p1,p3]},{img:"img/avatar2.jpg",name:"Paola Claudia",cargo:"CEO & CO-FOUNDER",p:[p1,p3]}]
+- var avatar = [{img:"img/avatar2.jpg",name:"Paola Valera",cargo:"CEO & CO-FOUNDER",p:[p1,p4],className:""},{img:"img/avatar3.jpg",name:"Paola Claudia",cargo:"CEO & CO-FOUNDER",p:[p1,p3],className:"inter"},{img:"img/avatar2.jpg",name:"Paola Claudia",cargo:"CEO & CO-FOUNDER",p:[p1,p3],className:""}]
 
 //HTML COMPILADO CON PUG
 //LOS JSON SE RECOMIENDA ARMARLOS EN UN ARCHIVO APARTE Y MINIFICARLOS PARA USARLOS AQUI
@@ -12,10 +12,10 @@
 
 mixin ps(p)
   each val in p
-    p.main-content.mb-50 #{val}
+    p.main-content.mb-50.justify #{val}
 
-mixin avatar(img,title,content,p)
-  .item
+mixin avatar(img,title,content,p,className)
+  .item(class="#{className}")
     .img-center
       img(src="#{img}")
     h1.avatar-title.ours-title #{title}
@@ -33,20 +33,20 @@ include header.pug.jade
     
     br
     .columns
-      .column.is-4
+      .column.is-4.avat1
         .inline
           img(src="img/avatar1.jpg")
           .line
             h1.avatar-title.ours-title Norma Mejinvar
             h3.avatar-cargo CEO & CO-FOUNDER
-        p.main-content.mb-50 #{p1}
-        p.main-content.mb-50 #{p2}
-        p.main-content.mb-50 #{p3}
+        p.main-content.mb-50.justify #{p1}
+        p.main-content.mb-50.justify #{p2}
+        p.main-content.mb-50.justify #{p3}
         
       .column
         #owl-demo.owl-carousel
           each val in avatar
-            +avatar(val.img,val.name,val.cargo,val.p)
+            +avatar(val.img,val.name,val.cargo,val.p,val.className)
           
     .parallax
       .in-parallax
