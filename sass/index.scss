@@ -24,8 +24,24 @@ body{
   height: 566px;
 }
 
-.fondo{
-  @include fondo(375px,"../img/banner.jpg",flex-start,center,$blanco);
+.fondo1{
+  @include fondo(375px,"../img/1.png",flex-start,center,$blanco);
+  padding-left: 10%;
+}
+.fondo2{
+  @include fondo(375px,"../img/2.png",flex-start,center,$blanco);
+  padding-left: 10%;
+}
+.fondo3{
+  @include fondo(375px,"../img/3.png",flex-start,center,$blanco);
+  padding-left: 10%;
+}
+.fondo4{
+  @include fondo(375px,"../img/4.png",flex-start,center,$blanco);
+  padding-left: 10%;
+}
+.fondo5{
+  @include fondo(375px,"../img/5.png",flex-start,center,$blanco);
   padding-left: 10%;
 }
 
@@ -53,7 +69,7 @@ body{
   }
 }
 
-.fondo1{
+.fondo{
   background-color: $fondo1;
   margin-right: 0px;
 }
