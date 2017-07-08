@@ -43,7 +43,7 @@ include header.pug.jade
         p.main-content.mb-50.justify #{p2}
         p.main-content.mb-50.justify #{p3}
         
-      .column
+      .column.is-8
         #owl-demo.owl-carousel
           each val in avatar
             +avatar(val.img,val.name,val.cargo,val.p,val.className)

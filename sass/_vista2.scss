@@ -21,11 +21,11 @@
 }
 
 .owl-next{
-  @include arrow("../img/next.png",right,-288px);
+  @include arrow("../img/next.png",right,-340px);
 }
 
 .owl-prev{
-  @include arrow("../img/prev.png",left,-288px);
+  @include arrow("../img/prev.png",inherit,-288px);
 }
 
 .line{
