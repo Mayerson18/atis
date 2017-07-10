@@ -10,6 +10,9 @@
 body{
   font-family: 'Roboto', sans-serif;
 }
+#owl-demo2{
+  margin-bottom: 52px;
+}
 
 .hid{
   visibility: hidden;
@@ -110,4 +113,21 @@ body{
 .foot-title{
   font-weight: bold;
   margin-bottom: 1em;
+}
+
+.ul{
+  list-style: inherit;
+  padding-left: 1em;
+  &>li{
+    color:#2d2d2d;
+  }
+}
+
+.img-ati{
+  height: 527px;
+}
+
+
+.title-banner{
+  margin-bottom: 30px;
 }

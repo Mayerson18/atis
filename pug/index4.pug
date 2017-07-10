@@ -1,18 +1,56 @@
 //output:../index4.html
-- var p1 = "Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi consectetur. Curabitur at vestibulum nisi. Nullam vehicula nisi velit. Mauris turpis nisl, molestie ut ipsum et, suscipit vehicula odio. Vestibulum interdum vestibulum felis ac molestie. Praesent aliquet quam et libero dictum, vitae dignissim leo eleifend. In in turpis turpis. Quisque justo turpis, vestibulum non enim nec, tempor mollis mi. Sed vel tristique quam."
-- var p2 = "ccumsan. Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi consectetur. Curabitur at vestibulum nisi. Nullam vehicula nisi velit. Mauris turpis nisl, molestie ut ipsum et, suscipit vehicula odio. Vestibulum interdum vestibulum felis ac molestie. Praesent aliquet quam et libero dictum, vitae dignissim leo eleifend. In in turpis turpis. Quisque justo turpis, vestibulum non enim nec, tempor mollis mi. Sed vel tristique quam"
-- var p3 = "mod, id commodo mi consectetur. Curabitur at vestibulum nisi. Nullam vehicula nisi velit. Mauris turpis nisl, molestie ut ipsum et, suscipit vehicula odio. Vestibulum interdum vestibulum felis ac molestie. Praesent aliquet quam et libero dictum, vitae dignissim leo eleifend. In in turpis turpis. Quisque justo turpis, vestibulum non enim nec, tempor mollis mi. Sed vel tristique quam"
-- var p4 = "Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi consectetur. Curabitur at vestibulum nisi. Nullam vehicula nisi velit."
-- var json = [{hash:"property",img:"img/banner4.jpg",title:"Property & Catatrope"},{hash:"subdesastres",img:"img/banner4.jpg",title:"Subdesastres"},{hash:"energia",img:"img/banner4.jpg",title:"Energia & Catatrope"}]
+- var p = ["ATIS RE designs programs for treaties and facultative accounts, and additional coverages, that provide tailored solutions due to our standing reputation with underwriters around the world. We pride ourselves for our ability to innovate, and create alternatives in each challenging market place.","Advantages:"]
+- var li = ["Our clients’ risks are placed with leading underwriters.","More than 50 years of combine experience from our technical team.","We have the ability to perform a risk management work to minimize risks to the account, which includes, among others, a report of recommendations made by expert engineers and certified to ISO 9001.","We offer the possibility of assembling unified reinsurance programs from the territory of the insured to operations that involved other countries.","Workheavy industries and adjust to the size of your need."]
+- var property = {hash:"property",img:"img/index4/banner4.jpg",title:"Property & Catatrope",p:p,li:li}
+
+- var p1 = ["ATIS RE is focus on providing solutions for the ever changing and demanding energy marketplace. We have access to senior underwriter’s leaders that have in-depth energy expertise, and proven record in this highly technical class of business."]
+- var li1 = ["Downstream (Onshore): Oil Companies Refineries Petrochemical and Chemical Plants, Gas works Terminals and Tank Farms, Underground Storage Chemical Fertilizer Plants Marketing and Distribution of Petroleum Products","Midstream: Transportation by Pipeline or Vessel Gathering Separation and Storage ","Upstream (Offshore): Explorations, offshore and onshore. Production Platforms, Mobile Offshore Drilling Units,Floating Production storage off Loading Units, Offshore Construction activities, lease operators and non-operators, contracting over the hole and contracting down the hole.","Mining: Underground Mining Open Pit Mining General Mining Coal and Hard Rock Mining","Other: Steel Manufacturing Electric Utilities and Alternative Energy Alternative Electric (wind and solar) Renewables, Nuclear Power Generation"]
+- var energy = {hash:"energy",img:"img/index4/ati6.png",title:"Energy",p:p1,li:li1}
+
+- var p2 = ["Atis Re has access to market-leading specialist in the placement and servicing of reinsurance of Banks and other financial institutions, obtaining coverage to match an individual client’s needs.","Institutions covered include commercial, retail and investment banks, asset managers, stockbrokers."]
+- var li2 = ["Bankers’ Blanket Bond","Computer crime","Kidnap, Ransom & Extortion","Plastic card","Clearing and Depository coverage","Professional indemnity","Directors and Officers","Safe Deposit Boxes","Cash in Transit","Fine Art Coverage","DDD","Computer crime"]
+- var risk = {hash:"risk",img:"img/index4/ati5.png",title:"Financial Risk",p:p2,li:li2}
+
+- var p3 = ["ATIS RE provide customized solutions for the complex risks on this demanding line of business inherent to the activity that is developed.There are numerous risks involved in the construction of works and the realization of assemblies, ATIS RE offers specialized reinsurance programs covering"]
+- var li3 = ["Machinery Breakdown","Boiler Explosion","Constructor All Risk","Erection All Risk","Data Processing Equipment","Contractors Equipment","Civil Work"]
+- var engineering = {hash:"engineering",img:"img/index4/ati4.png",title:"Engineering",p:p3,li:li3}
+
+- var p4 = ["ATIS RE focus on cargo business and related coverage’s, We also have extensive experience in the design and placement of Stock Throughput coverage,","Our team also has experience in yacht reinsurance and yatch marines coverage for most types of yachts and pleasure craft including mega-yachts and their associated liabilities."]
+- var li4 = ["Hull & Machinery ","Marine Cargo ","Marine Liability","Stock Throughput","Protection & Indemnity","Ports & Terminals ","Marine Facilities ","Hull and Liability ","Hull War Risk ","Airport Owners and Operator Liability"]
+- var marine = {hash:"marine",img:"img/index4/ati3.png",title:"Marine",p:p4,li:li4}
+
+- var p5 = ["Liability and Casualty is a core line of business for ATIS RE and our team has pride themselves on precise and diligent underwriting to clients. whatever their size"]
+- var li5 = ["Professional Liability","Legal Liability","Directors & Officials","Produc Liability Cover","Pollution Liability Cover","Enviromantal Liability Cover","Product Guarantee & Recall"]
+- var lability = {hash:"lability",img:"img/index4/ati2.png",title:"Lability",p:p5,li:li5}
+
+- var p6 = [""]
+- var li6 = ["Hull and Liability - Rotor wing and fixed-wing hull and liability insurance","Rotor Wing - Covers commercially and privately operated helicopters, including specialist users","Hull & War Risk - Covers hull war and allied perils, including malicious damage but excluding hull all-risks","Aviation premises and product liability- Cover for those responsible for aviation premises and housing third-party aircraft, maintaining third-party aircraft or manufacturing aviation products."]
+- var aviation = {hash:"aviation",img:"img/index4/ati1.png",title:"Aviation",p:p6,li:li6}
+
+- var json = [property,energy,risk,engineering,marine,lability,aviation]
 //HTML COMPILADO CON PUG
 //LOS JSON SE RECOMIENDA ARMARLOS EN UN ARCHIVO APARTE Y MINIFICARLOS PARA USARLOS AQUI
 //OJO NO MODIFICAR MIXINS SOLO !!VARIABLES!!
 
+mixin ps(x)
+  each val in x
+    p.main-content-v3.mb-25 #{val}
+    
+mixin lis(y)
+  ul.ul
+    each val in y
+      li #{val}
+    
 mixin carousel(x)
   each val in x
     .item(data-hash="#{val.hash}")
-      img(src="#{val.img}",alt="ATIS")
+      img.img-ati(src="#{val.img}",alt="ATIS")
       .title-banner.center #{val.title}
+      .columns
+        .column
+          h1.h1 #{val.title}
+          +ps(val.p)
+          +lis(val.li)
         
 include header.pug.jade
     link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css")
@@ -22,14 +60,9 @@ include header.pug.jade
     #owl-demo2.owl-carousel
       +carousel(json)
     
-    .columns
-      .column
-        h1.h1 Sub Title Propery
-        p.main-content-v3.mb-50 #{p1}
-        p.main-content-v3.mb-50 #{p2}
-        p.main-content-v3.mb-50 #{p3}
+    
         
-      .column
+      //.column
         .numbers.center
           .num1 Elemento numero 1
           .num2 Elemento numero 2

@@ -14,10 +14,15 @@
 .parallax{
   position: relative;
   top: 7px;
+  width: 100%;
 }
 
 #owl-demo{
   text-align: center;
+  height: 100%;
+  &>.owl-stage-outer,.owl-stage,.owl-item,.it{
+    height: 100%;
+  }
 }
 
 .owl-next{
