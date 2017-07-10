@@ -36,11 +36,17 @@
 }
 
 .next1{
-  @include navs(-510px,"../img/izq.png",165px);
+  position: relative;
+  @include navs(-5px,"../img/der.png",165px);
+  height: 52px;
+  cursor: pointer;
 }
 
 .prev1{
-  @include navs(-562px,"../img/der.png",165px);
+  position: relative;
+  @include navs(-5px,"../img/izq.png",165px);
+  height: 52px;
+  cursor: pointer;
 }
 
 .title-banner{
@@ -48,4 +54,6 @@
   background-color: #224767;
   height: 52px;
   padding-top: .15em;
+  display: flex;
+  justify-content: space-between;
 }

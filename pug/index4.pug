@@ -45,7 +45,10 @@ mixin carousel(x)
   each val in x
     .item(data-hash="#{val.hash}")
       img.img-ati(src="#{val.img}",alt="ATIS")
-      .title-banner.center #{val.title}
+      .title-banner.center 
+        .prev1
+        div #{val.title}
+        .next1
       .columns
         .column
           h1.h1 #{val.title}
