@@ -22,19 +22,20 @@ include header.pug.jade
     #owl-home.owl-carousel(style="background-color: #f3f9f1;")
       include items.pug.jade
     div(style="background-color: #f3f9f1;height:65px;")
-    .columns.fondo
-      .column
-        h1.main-title ATIS Re Corp.
-        p.main-pretitle.mb-25 #{p_pretitle}
-        p.main-content.mb-25 #{p1}
-        p.main-content.mb-25 #{p2}
-        p.main-content.mb-25 #{p3}
-      .column.flex-center
-        img(src="img/img1.png")
-          
-    .columns
-      each val in ours
-        +article(val.img,val.title,val.p)
+    .layout
+      .columns.fondo
+        .column
+          h1.main-title ATIS Re Corp.
+          p.main-pretitle.mb-25 #{p_pretitle}
+          p.main-content.mb-25 #{p1}
+          p.main-content.mb-25 #{p2}
+          p.main-content.mb-25 #{p3}
+        .column.flex-center
+          img(src="img/img1.png")
+    .layout      
+      .columns
+        each val in ours
+          +article(val.img,val.title,val.p)
         
     include footer.pug.jade
     

@@ -131,3 +131,8 @@ body{
 .title-banner{
   margin-bottom: 30px;
 }
+
+@media (min-width:1200px){
+  .columns{ width: 1200px; }
+  .layout{padding-left: 7%!important;margin: 0px;}
+}

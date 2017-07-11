@@ -49,11 +49,12 @@ mixin carousel(x)
         .prev1
         div #{val.title}
         .next1
-      .columns
-        .column
-          h1.h1 #{val.title}
-          +ps(val.p)
-          +lis(val.li)
+      .layout
+        .columns
+          .column
+            h1.h1 #{val.title}
+            +ps(val.p)
+            +lis(val.li)
         
 include header.pug.jade
     link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css")
@@ -80,8 +81,7 @@ include header.pug.jade
           .right-business
             p Contactar
           
-    include contactenos.pug.jade
-                
+    include contactenos.pug.jade      
     include footer.pug.jade
     script(src="https://code.jquery.com/jquery-3.2.1.min.js",integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=",crossorigin="anonymous")
     script(src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js")
