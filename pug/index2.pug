@@ -24,6 +24,7 @@ mixin avatar(img,title,content,p,className)
           
 include header.pug.jade
     link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css")
+    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.css")
     link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css")
   body
     include nav.pug.jade
@@ -31,12 +32,12 @@ include header.pug.jade
       .in-fondo
         h2 Our Team
         p Nam porttitor blandit accumsan, Ut vel dictum sem, a pretium dui. In malesuada enim
-     
+    
     br
     .layout2
       .columns.columns-v2
         .column.is-4.avat1.center
-          img.img-avatar(src="img/avatar1.png")
+          img.img-avatar(src="img/avatar1.png")  
           h1.avatar-title.ours-title Norma Mejinvar
           h3.avatar-cargo CEO & CO-FOUNDER
           p.main-content.mb-50.justify #{p1}
