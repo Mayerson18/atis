@@ -37,14 +37,14 @@
 
 .next1{
   position: relative;
-  @include navs(-5px,"../img/der.png",165px);
+  @include navs(-5px,"../img/der.png",0px);
   height: 52px;
   cursor: pointer;
 }
 
 .prev1{
   position: relative;
-  @include navs(-5px,"../img/izq.png",165px);
+  @include navs(-5px,"../img/izq.png",0px);
   height: 52px;
   cursor: pointer;
 }

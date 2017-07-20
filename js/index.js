@@ -23,13 +23,11 @@ $('#owl-demo').owlCarousel({
        },
        1000:{
            items:2,
-           nav:false,
+           nav:true,
            loop:false
        }
    },
-   nav: true
 });
 
 $(".owl-prev").text("");
 $(".owl-next").text("");
-$(".owl-nav").removeClass("disabled");

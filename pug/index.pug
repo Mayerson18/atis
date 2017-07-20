@@ -22,7 +22,7 @@ include header.pug.jade
     #owl-home.owl-carousel(style="background-color: #f3f9f1;")
       include items.pug.jade
     div(style="background-color: #f3f9f1;height:65px;")
-    .layout(style="background-color: #f3f9f1")
+    .layout(style="background-color: #f3f9f1").pr
       .in 
         .columns.fondo
           .column
@@ -31,11 +31,13 @@ include header.pug.jade
             p.main-content.mb-25 #{p1}
             p.main-content.mb-25 #{p2}
             p.main-content.mb-25 #{p3}
-          .column.flex-center.first
+          .column.flex-center.flex-out
             img(src="img/img1.png")
-    .layout      
-      .in
-        .columns
+              
+    br
+    .layout.flex-out
+      .in1
+        .columns.columns-v1
           each val in ours
             +article(val.img,val.title,val.p)
         

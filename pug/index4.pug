@@ -47,9 +47,11 @@ mixin carousel(x)
     .item(data-hash="#{val.hash}")
       img.img-ati(src="#{val.img}",alt="ATIS")
       .title-banner.center 
-        .prev1
+        .navigation.prev1
+          img(href="img/izq.png")
         div #{val.title}
-        .next1
+        .navigation.next1
+          img(href="img/der.png")
       .layout
         .columns
           .column
@@ -65,8 +67,6 @@ include header.pug.jade
     #owl-demo2.owl-carousel
       +carousel(json)
     
-    
-        
       //.column
         .numbers.center
           .num1 Elemento numero 1
