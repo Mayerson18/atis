@@ -1,12 +1,9 @@
-mixin as()
-  each val in ["Home","About","Product and Services","Contact Us"]
-    a.nav-item #{val}
-    
 img(src="img/logo.png",alt="Atis",class="img-logo")
 br
 br
 br  
-nav.nav
+
+nav.nav    
   .nav-left
     a.nav-item
       
@@ -15,5 +12,8 @@ nav.nav
       span
   
   .nav-right.nav-menu
-    +as()
-    a.nav-item.active Help us to help you better
+    a.nav-item Home
+    a.nav-item About
+    a.nav-item Products and Services
+    a.nav-item Contact Us
+    a.nav-item Help us to help you better

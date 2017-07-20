@@ -9,7 +9,6 @@ $(".nav-toggle").click(function() {
 });
 
 $('#owl-demo').owlCarousel({
-  nav: true,
   items: 2,
   margin: 56,
   responsiveClass: true,
@@ -27,7 +26,8 @@ $('#owl-demo').owlCarousel({
            nav:false,
            loop:false
        }
-   }
+   },
+   nav: true
 });
 
 $(".owl-prev").text("");
