@@ -31,7 +31,7 @@ include header.pug.jade
         h2 CORPORATE PROFILE 
       
     .layout  
-      .columns.countries(data-anijs="if: scroll, do: fadeInRight animated, to: .as")
+      .columns.columns-v2.countries(data-anijs="if: scroll, do: fadeInRight animated, to: .as")
         .column.paises
           img(src="img/ecuador.png",alt="ATIS")
           p.p-paises Ecuador
@@ -49,7 +49,7 @@ include header.pug.jade
           p.p-paises Nicaragua
     
     .layout
-      .columns
+      .columns.columns-v2
         .column
           h2.h1 Why Choose Us
           p.main-content-v3.mb-25 #{pl1}
@@ -68,13 +68,13 @@ include header.pug.jade
           p.main-content-v3.mb-25 #{pl8}
           
         .column
-          .objetives
+          .objetives.pr-2em
             h3.title-objetives.mb-25.ml-21 OUR VALUES
             +p("Assurance",pr1,"fadeInRight","as")
             +p("Transparency",pr2,"fadeInRight","tra")
             +p("Integrity",pr3,"fadeInRight","int")
             +p("Service",pr4,"fadeInRight","ser")
-          
+    br
     include contactenos.pug.jade
     include footer.pug.jade
     

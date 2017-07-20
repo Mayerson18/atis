@@ -1,19 +1,19 @@
 - var pFooter = "Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi consectetur. Curabitur at vestibulum nisi. Nullam vehicula nisi velit."
 mixin foot(x)
   each val in x
-    .column
+    .column.center
       img(src="img/foot#{val}.png")
 .pre-footer
 footer.foot
-  .columns
+  .columns.w-full
     .column.is-3
       h5.foot-title About Us
       p.foot-content #{pFooter}
-    .column
+    .column.is-9
       h5.foot-title Companies we Present  
-      .columns
+      .columns.w-full
         +foot([1,2,3,4])
-      .columns
+      .columns.w-full
         +foot([5,6,7,8])
 
             
