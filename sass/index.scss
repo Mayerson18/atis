@@ -147,6 +147,9 @@ body{
 }
 
 @media (max-width:768px){
+  .dropdown-content{
+    font-size: 11px;
+  }
   .fondo{
     display: flex;
     flex-direction: column-reverse;
