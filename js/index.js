@@ -10,7 +10,6 @@ $(".nav-toggle").click(function() {
 
 $('#owl-demo').owlCarousel({
   items: 2,
-  margin: 56,
   responsiveClass: true,
   responsive:{
        0:{

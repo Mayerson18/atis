@@ -13,9 +13,17 @@ html,body{
   height: 100%;
 }
 
+
+
 body{
   font-family: 'Roboto', sans-serif;
 }
+
+
+legend{
+  padding: .8em 0px;
+}
+
 #owl-demo2{
   margin-bottom: 52px;
 }
@@ -29,7 +37,7 @@ body{
 }
 
 .it{
-  padding: 0px 10%;
+  padding: 0px 9%;
   height: 566px;
 }
 
@@ -91,7 +99,9 @@ body{
   align-items: center;
 }
 
-.center{  text-align: center; }
+.center{
+  //text-align: center;
+}
 
 .img-logo{
   position: absolute;
@@ -172,6 +182,7 @@ body{
 .w-full{ width: 100%; }
 
 .in1{
+  margin-top: 20px;
   padding-right: 2em;
 }
 
@@ -182,9 +193,24 @@ body{
 }
 
 .banner{
-  height:365px;
+  height:265px;
 }
 
 .prueba{
   display: inline-flex;
+}
+
+.ours-title{
+  margin-top: 6px;
+}
+
+
+.ours-content{
+  //background: black;
+  margin-top: 5px;
+  font-size: 0.9em;
+  padding: 10px 10px;
+  font-weight: normal;
+  color: #4f4d4d;
+  line-height: 1.24;
 }
