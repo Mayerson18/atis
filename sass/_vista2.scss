@@ -24,6 +24,7 @@
 
 .avatar-cargo{
   @include textos(em(20px),600!important,$cargo,initial);
+  margin-bottom: 10px;
 }
 
 .parallax{
