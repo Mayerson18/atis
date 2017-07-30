@@ -1,16 +1,22 @@
 //output:../index2.html
-- var p1 = "Norma Menjivar, President and CEO of ATIS RE , is responsible for developing leadership within the company, directing the successful implementation of corporate objectives and maintaining the core family values of ATIS RE. Mrs. Menjivar is an innovator, her visions in the companys role evolved and seized emerging opportunities for a reinsurance intermediary broker company that would raise the industry standard entirely."
+- var p1 = "Norma Menjivar, has served and lead successfully groups of reinsurance professionals for more than 30 years, occupying senior level positions in the industry. Her remarkable career started in prestigious Insurance companies in her natal country of El Salvador, to then move to the brokering side and develop an impressive pool of work and expansion for Latino-America’s reinsurance needs."
+- var p12 = "Among her various achievements are the creation of mechanisms for client’s commercial development, representation, control procedures, and high-level account management and placement, those are only some of her most accomplished professional achievements in this industry, where she is well known for her reputation of solid principles and values, being those the principal transportation for ATIS RE Success in this demanding market."
+
 //- var p2 = "Paola Valera, Chief Operating Officer is co-founders of ATIS RE, she held a leadership role in structuring the company and guiding its expansion for the years to come. Her position evolved and encompassed the development of operational and managing the initiatives and setting strategic agendas currently. She is involved in client relationships at the executive level and structuring the company’s Paola holds a Master Degree in Accounting from Nova Southern University, and her experience has been based on accounting roles in the reinsurance industry for more than 10 years."
-- var p2 = "Paola Valera, Chief Operating Officer is co-founders of ATIS RE, she held a leadership role in structuring the company and guiding its expansion for the years to come. Her position evolved and encompassed the development of operational and managing the initiatives and setting strategic agendas currently."
+- var p2 = "Paola Valera, held a leadership role in structuring the company and guiding its expansion for the years to come."
+- var p21 = "Her position evolves and encompassed the development of operations and managing the initiatives, setting strategies agendas currently and accomplishing the company’s mission, which evolved and seized emerging opportunities for our client’s and partners."
+- var p22 = "Paola is involved in client relationships at the executive level and structuring the company’s goals. As a professional, she holds a successful carrier in Accounting at the university of FIU and a master degree in Finance from Nov Southeastern University. Her experience has been based on the reinsurance industry for more than 10 years."
+
 
 - var p3 = "Mrs. Menjivar is an innovator, her visions in the companys role evolved and seized emerging opportunities for a reinsurance intermediary broker company that would raise the industry standard entirely. Mrs. Menjivar leads the early years of Atis RE and its entrance and acceptance as a new Broker in the industry, she is a doer and challenger. Norma Menjivar is one of the founders, she has more than twenty-five years of experience in the reinsurance industry with a strong background in risk management. She graduated from El Salvador University with a Bachelor in Business Administration oriented to Insurance."
-- var p4 = "As technical broker, Claudia has proved her capacity and has made valuable contribution to ATIS re, she provides support to the team, ensuring client needs and expectations are met, and to coordinate the overall service delivery to agreed technical standards."
-- var p5 = "Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor. Pellentesque non dignissim neque. Ut porta viverra est, ut dignissim elit elementum ut"
-- var avatar = [{img:"img/avatar2.png",name:"Paola Valera",cargo:"CEO & CO-FOUNDER",p:[p2],className:""},{img:"img/avatar3.png",name:"Claudia Ruiz",cargo:"TECHNICAL BROKER",p:[p4],className:"inter"}]
+- var p4 = "As Technical Broker, Mrs. Ruiz has proved her capacity and has made valuable contributions to the company, providing support to the operations and taking accountability for the department success, ensuring client’s needs and expectations are always met, and coordinating the overall service delivery to agreed technical standards. In her ongoing profession, Claudia is pursuing to graduate with a second language diploma from MDCC and to get the State License of Insurance for General Lines in Florida."
+- var p5 = "“We are commited to constantly improve ourselves to serve your reinsurance needs excellently”"
+- var avatar = [{img:"img/avatar2.png",name:"Paola Valera",cargo:"VP & CO-FOUNDER",p:[p2,p21,p22],className:""},{img:"img/avatar3.png",name:"Claudia Ruiz",cargo:"TECHNICAL BROKER",p:[p4],className:"inter"}]
 
 //HTML COMPILADO CON PUG
 //LOS JSON SE RECOMIENDA ARMARLOS EN UN ARCHIVO APARTE Y MINIFICARLOS PARA USARLOS AQUI
 //OJO NO MODIFICAR MIXINS SOLO !!VARIABLES!!
+
 
 mixin ps(p)
   each val in p
@@ -35,7 +41,7 @@ include header.pug.jade
         h2 Our Team
         //p Nam porttitor blandit accumsan, Ut vel dictum sem, a pretium dui. In malesuada enim
     
-    
+  
     
     br
     .layout2
@@ -45,6 +51,7 @@ include header.pug.jade
           h1.avatar-title.ours-title Norma Mejinvar
           h3.avatar-cargo CEO & CO-FOUNDER
           p.main-content.mb-50.justify #{p1}
+          p.main-content.mb-50.justify #{p12}
           //p.main-content.mb-50.justify #{p3}
 
           

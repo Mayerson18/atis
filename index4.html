@@ -16,11 +16,17 @@
 <body><img src="img/logo.png" alt="Atis" class="img-logo"><br><br><br>
   <nav class="nav">
     <div class="nav-left"><a class="nav-item"></a></div><span class="nav-toggle"><span></span><span></span><span></span></span>
-    <div class="nav-right nav-menu"><a href="index.html" class="nav-item">Home</a><a href="index2.html" class="nav-item">About</a>
+    <div class="nav-right nav-menu"><a href="index.html" class="nav-item">Home</a>
+      <!--a.nav-item(href="index2.html") About Us-->
+      <div class="dropdown nav-item">About Us
+        <div class="dropdown-content"> <a href="index2.html">Our Team</a><a href="index3.html">Why to choose us</a></div>
+      </div>
       <!--a.nav-item Product and Services-->
       <div class="dropdown nav-item">Product and Services
         <div class="dropdown-content"> <a href="index4.html#property">Property &amp; Catatrophe</a><a href="index4.html#energy">Energy</a><a href="index4.html#risk">Financial Risk</a><a href="index4.html#engineering">Engineering</a><a href="index4.html#marine">Marine</a><a href="index4.html#lability">Lability</a></div>
-      </div><a href="index3.html#contactenos" class="nav-item">Contact Us</a><a href="index3.html" class="nav-item active"> Help us to help you better</a>
+      </div><a href="index3.html#contactenos" class="nav-item">Contact Us</a>
+      <!--a.nav-item.active(href="index3.html")  Help us to help you better-->
+      
     </div>
   </nav>
   <div id="owl-demo2" class="owl-carousel">
@@ -196,6 +202,55 @@
         </div>
       </div>
     </div>
+    <div data-hash="life" class="item"><img src="img/index4/groouplife.jpg" alt="ATIS" class="img-ati"/>
+      <div class="title-banner center"> 
+        <div class="navigation prev1"><img href="img/izq.png"/></div>
+        <div>Life Group</div>
+        <div class="navigation next1"><img href="img/der.png"/></div>
+      </div>
+      <div class="layout">
+        <div class="columns">
+          <div class="column">
+            <h1 class="h1">Life Group</h1>
+            <p class="main-content-v3 mb-25">Atis RE offers Quota Share, Excess of Loss, and Carve-out Reinsurance Coverage, designed to suit the specific needs of insurance companies for the following insurance programs:</p>
+            <ul class="ul">
+              <li>Major Medical Expenses and Comprehensive Health</li>
+              <li>Critical Illness</li>
+              <li>High Cost Illness</li>
+              <li>Long-Term Care Due to Accident</li>
+              <li>Hospital Indemnity</li>
+              <li>Group Life</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div data-hash="livestock" class="item"><img src="img/index4/atisanimal.jpg" alt="ATIS" class="img-ati"/>
+      <div class="title-banner center"> 
+        <div class="navigation prev1"><img href="img/izq.png"/></div>
+        <div>Livestock</div>
+        <div class="navigation next1"><img href="img/der.png"/></div>
+      </div>
+      <div class="layout">
+        <div class="columns">
+          <div class="column">
+            <h1 class="h1">Livestock</h1>
+            <p class="main-content-v3 mb-25">ATIS RE offers livestock reinsurance from Specialised and individually tailored coverage, which is available for a variety of clients, from private farm owners to commercial operations.</p>
+            <p class="main-content-v3 mb-25">Whether is or not in transit, our livestock solutions are:</p>
+            <ul class="ul">
+              <li>Horse Insurance</li>
+              <li>Higher-Valued Animal Insurance</li>
+              <li>Livestock Transit Insurance</li>
+              <li>Poultry Insurance</li>
+              <li>Livestock Ocean Marine Transit Insurance</li>
+              <li>Production animals</li>
+              <li>exotics (zoo animals, aquatics , reptiles, exotic birds)</li>
+              <li>embryos and semen</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
     <!--.column
     .numbers.center
       .num1 Elemento numero 1
@@ -256,22 +311,15 @@
     <div class="columns w-full">
       <div class="column is-3">
         <h5 class="foot-title">About Us</h5>
-        <p class="foot-content">Atis re is a fully accredited and licensed Reinsurance Intermediary Broker with a team that has over 70 years of combined experience.   We have the ability to meet and exceed our customers' expectations, and our team is dedicated to provide exceptional customer service tailored to exceed your placements chain needs, all while providing complete consulting service, being innovators, accommodating to any size or complexity, those are only few of the advantage of working with us. </p>
+        <p class="foot-content">Being a full-service and multiline reinsurance intermediary brokers company, ATIS RE provides a valuable support, helping its clients to grow their business, implementing &amp; managing their risk, increasing the profitability of their portfolios through the strategic efforts of their technical experts, and with the support of leading global reinsurers companies.</p>
       </div>
       <div class="column is-9">
         <h5 class="foot-title">Companies we Present  </h5>
-        <div class="columns w-full">
-            <div class="column center"><img src="img/foot1.png"></div>
-            <div class="column center"><img src="img/foot2.png"></div>
-            <div class="column center"><img src="img/foot3.png"></div>
-            <div class="column center"><img src="img/foot4.png"></div>
-        </div>
-        <div class="columns w-full">
-            <div class="column center"><img src="img/foot5.png"></div>
-            <div class="column center"><img src="img/foot6.png"></div>
-            <div class="column center"><img src="img/foot7.png"></div>
-            <div class="column center"><img src="img/foot8.png"></div>
-        </div>
+        <div class="columns w-full"></div><img src="img/mfoo.png">
+        <!--.columns.w-full//+foot([1,2,3,4])
+        -->
+        <!--.columns.w-full//+foot([5,6,7,8])            
+        -->
       </div>
     </div>
   </footer>

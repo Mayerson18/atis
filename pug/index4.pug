@@ -11,7 +11,6 @@
 - var li2 = ["Bankers’ Blanket Bond","Computer crime","Kidnap, Ransom & Extortion","Plastic card","Clearing and Depository coverage","Professional indemnity","Directors and Officers","Safe Deposit Boxes","Cash in Transit","Fine Art Coverage","DDD","Computer crime"]
 - var risk = {hash:"risk",img:"img/index4/ati5.png",title:"Financial Risk",p:p2,li:li2}
 
-
 - var p3 = ["ATIS RE provide customized solutions for the complex risks on this demanding line of business inherent to the activity that is developed.There are numerous risks involved in the construction of works and the realization of assemblies, ATIS RE offers specialized reinsurance programs covering"]
 - var li3 = ["Machinery Breakdown","Boiler Explosion","Constructor All Risk","Erection All Risk","Data Processing Equipment","Contractors Equipment","Civil Work"]
 - var engineering = {hash:"engineering",img:"img/index4/ati4.png",title:"Engineering",p:p3,li:li3}
@@ -29,7 +28,15 @@
 - var li6 = ["Hull and Liability - Rotor wing and fixed-wing hull and liability insurance","Rotor Wing - Covers commercially and privately operated helicopters, including specialist users","Hull & War Risk - Covers hull war and allied perils, including malicious damage but excluding hull all-risks","Aviation premises and product liability- Cover for those responsible for aviation premises and housing third-party aircraft, maintaining third-party aircraft or manufacturing aviation products."]
 - var aviation = {hash:"aviation",img:"img/index4/ati1.png",title:"Aviation",p:p6,li:li6}
 
-- var json = [property,energy,risk,engineering,marine,lability,aviation]
+- var p7 = ["Atis RE offers Quota Share, Excess of Loss, and Carve-out Reinsurance Coverage, designed to suit the specific needs of insurance companies for the following insurance programs:"]
+- var li7 = ["Major Medical Expenses and Comprehensive Health","Critical Illness","High Cost Illness","Long-Term Care Due to Accident","Hospital Indemnity","Group Life"]
+- var life = {hash:"life",img:"img/index4/groouplife.jpg",title:"Life Group",p:p7,li:li7}
+
+- var p8 = ["ATIS RE offers livestock reinsurance from Specialised and individually tailored coverage, which is available for a variety of clients, from private farm owners to commercial operations.","Whether is or not in transit, our livestock solutions are:"]
+- var li8 = ["Horse Insurance","Higher-Valued Animal Insurance","Livestock Transit Insurance","Poultry Insurance","Livestock Ocean Marine Transit Insurance","Production animals","exotics (zoo animals, aquatics , reptiles, exotic birds)","embryos and semen"]
+- var livestock = {hash:"livestock",img:"img/index4/atisanimal.jpg",title:"Livestock",p:p8,li:li8}
+
+- var json = [property,energy,risk,engineering,marine,lability,aviation,life,livestock]
 //HTML COMPILADO CON PUG
 //LOS JSON SE RECOMIENDA ARMARLOS EN UN ARCHIVO APARTE Y MINIFICARLOS PARA USARLOS AQUI
 //OJO NO MODIFICAR MIXINS SOLO !!VARIABLES!!
@@ -67,7 +74,7 @@ include header.pug.jade
 
     #owl-demo2.owl-carousel
       +carousel(json)
-    
+
       //.column
         .numbers.center
           .num1 Elemento numero 1

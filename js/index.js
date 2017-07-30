@@ -8,6 +8,19 @@ $(".nav-toggle").click(function() {
   }
 });
 
+$(".mostrar").click(function(){
+  console.log($(".e").hasClass("es"))
+  $(".e").addClass("es");
+  $(".e").removeClass("animated fadeInLeft");
+  var next = $(this).next();
+  next.removeClass("es");
+  next.addClass("animated fadeInLeft");
+  if($(this).next().data("repeat")){
+    next.next().removeClass("es");
+    next.next().addClass("animated fadeInLeft");
+  }
+});
+
 $('#owl-demo').owlCarousel({
   items: 2,
   responsiveClass: true,
