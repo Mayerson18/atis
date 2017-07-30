@@ -17,8 +17,8 @@
 //LOS JSON SE RECOMIENDA ARMARLOS EN UN ARCHIVO APARTE Y MINIFICARLOS PARA USARLOS AQUI
 //OJO NO MODIFICAR MIXINS SOLO !!VARIABLES!!
 
-mixin p(title,p,animation,classname)
-  h4.post-title.ml-21 #{title}
+mixin p(f,title,p,animation,classname)
+  h4.post-title.ml-21 #[strong.mayuscula #{f}] #{title}
   p.p-objetives.mb-25.ml-21(class="#{classname}" data-anijs="if: scroll, on: window, do: #{animation} animated, before: $scrollReveal") #{p}
   //p.p-objetives.mb-25.ml-21.hid(class="#{classname}" data-anijs="if: scroll, do: #{animation} animated,to: .as") #{p}
     
@@ -62,28 +62,28 @@ include header.pug.jade
       .columns.columns-v2
         .column
           h2.h1 Why Choose Us
-          p.main-content-v3.mb-25 #{pl1}
+          p.main-content-v3.mb-25.mostrar #{pl1}
           h2.subtitle.mision Flexible 
-          p.main-content-v3.mb-25 #{pl2}
+          p.main-content-v3.mb-25.mostrar #{pl2}
           h2.subtitle.vision We're innovators 
-          p.main-content-v3.mb-25 #{pl3}
+          p.main-content-v3.mb-25.mostrar #{pl3}
           h2.subtitle.mision Customer service 
-          p.main-content-v3.mb-25 #{pl4}
+          p.main-content-v3.mb-25.mostrar #{pl4}
           h2.subtitle.vision Stability 
-          p.main-content-v3.mb-25 #{pl5}
+          p.main-content-v3.mb-25.mostrar #{pl5}
           h2.subtitle.mision  Time Zone and Language 
-          p.main-content-v3.mb-25 #{pl6}
+          p.main-content-v3.mb-25.mostrar #{pl6}
           h2.subtitle.vision Experience and Reputation 
-          p.main-content-v3.mb-25 #{pl7}
+          p.main-content-v3.mb-25.mostrar #{pl7}
           p.main-content-v3.mb-25 #{pl8}
           
         .column
           .objetives.pr-2em
             h3.title-objetives.mb-25.ml-21 OUR VALUES
-            +p("Assurance",pr1,"fadeInRight","as")
-            +p("Transparency",pr2,"fadeInRight","tra")
-            +p("Integrity",pr3,"fadeInRight","int")
-            +p("Service",pr4,"fadeInRight","ser")
+            +p("A","ssurance",pr1,"fadeInRight","as")
+            +p("T","ransparency",pr2,"fadeInRight","tra")
+            +p("I","ntegrity",pr3,"fadeInRight","int")
+            +p("S","ervice",pr4,"fadeInRight","ser")
     br
     include contactenos.pug.jade
     include footer.pug.jade
