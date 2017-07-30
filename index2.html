@@ -1,7 +1,8 @@
 
 <!--HTML COMPILADO CON PUG-->
 <!--LOS JSON SE RECOMIENDA ARMARLOS EN UN ARCHIVO APARTE Y MINIFICARLOS PARA USARLOS AQUI-->
-<!--OJO NO MODIFICAR MIXINS SOLO !!VARIABLES!!--><!DOCTYPE html>
+<!--OJO NO MODIFICAR MIXINS SOLO !!VARIABLES!!-->
+<!DOCTYPE html>
 <html lang="en_US">
   <head>
     <title>Atis</title>
@@ -18,11 +19,17 @@
 <body><img src="img/logo.png" alt="Atis" class="img-logo"><br><br><br>
   <nav class="nav">
     <div class="nav-left"><a class="nav-item"></a></div><span class="nav-toggle"><span></span><span></span><span></span></span>
-    <div class="nav-right nav-menu"><a href="index.html" class="nav-item">Home</a><a href="index2.html" class="nav-item">About</a>
+    <div class="nav-right nav-menu"><a href="index.html" class="nav-item">Home</a>
+      <!--a.nav-item(href="index2.html") About Us-->
+      <div class="dropdown nav-item">About Us
+        <div class="dropdown-content"> <a href="index2.html">Our Team</a><a href="index3.html">Why to choose us</a></div>
+      </div>
       <!--a.nav-item Product and Services-->
       <div class="dropdown nav-item">Product and Services
         <div class="dropdown-content"> <a href="index4.html#property">Property &amp; Catatrophe</a><a href="index4.html#energy">Energy</a><a href="index4.html#risk">Financial Risk</a><a href="index4.html#engineering">Engineering</a><a href="index4.html#marine">Marine</a><a href="index4.html#lability">Lability</a></div>
-      </div><a href="index3.html#contactenos" class="nav-item">Contact Us</a><a href="index3.html" class="nav-item active"> Help us to help you better</a>
+      </div><a href="index3.html#contactenos" class="nav-item">Contact Us</a>
+      <!--a.nav-item.active(href="index3.html")  Help us to help you better-->
+      
     </div>
   </nav>
   <div class="fondo-v2">
@@ -38,7 +45,8 @@
       <div class="column is-4 avat1 center pad3"><img src="img/avatar1.png" class="img-avatar">
         <h1 class="avatar-title ours-title">Norma Mejinvar</h1>
         <h3 class="avatar-cargo">CEO & CO-FOUNDER</h3>
-        <p class="main-content mb-50 justify">Norma Menjivar, President and CEO of ATIS RE , is responsible for developing leadership within the company, directing the successful implementation of corporate objectives and maintaining the core family values of ATIS RE. Mrs. Menjivar is an innovator, her visions in the companys role evolved and seized emerging opportunities for a reinsurance intermediary broker company that would raise the industry standard entirely.</p>
+        <p class="main-content mb-50 justify">Norma Menjivar, has served and lead successfully groups of reinsurance professionals for more than 30 years, occupying senior level positions in the industry. Her remarkable career started in prestigious Insurance companies in her natal country of El Salvador, to then move to the brokering side and develop an impressive pool of work and expansion for Latino-America’s reinsurance needs.</p>
+        <p class="main-content mb-50 justify">Among her various achievements are the creation of mechanisms for client’s commercial development, representation, control procedures, and high-level account management and placement, those are only some of her most accomplished professional achievements in this industry, where she is well known for her reputation of solid principles and values, being those the principal transportation for ATIS RE Success in this demanding market.</p>
         <!--p.main-content.mb-50.justify #{p3}-->
         
       </div>
@@ -47,14 +55,16 @@
           <div class="item it">
             <div class="img-center"><img src="img/avatar2.png" class="img-avatar"/></div>
             <h1 class="avatar-title ours-title">Paola Valera</h1>
-            <h3 class="avatar-cargo">CEO &amp; CO-FOUNDER</h3>
-            <p class="main-content mb-50 justify">Paola Valera, Chief Operating Officer is co-founders of ATIS RE, she held a leadership role in structuring the company and guiding its expansion for the years to come. Her position evolved and encompassed the development of operational and managing the initiatives and setting strategic agendas currently.</p>
+            <h3 class="avatar-cargo">VP &amp; CO-FOUNDER</h3>
+            <p class="main-content mb-50 justify">Paola Valera, held a leadership role in structuring the company and guiding its expansion for the years to come.</p>
+            <p class="main-content mb-50 justify">Her position evolves and encompassed the development of operations and managing the initiatives, setting strategies agendas currently and accomplishing the company’s mission, which evolved and seized emerging opportunities for our client’s and partners.</p>
+            <p class="main-content mb-50 justify">Paola is involved in client relationships at the executive level and structuring the company’s goals. As a professional, she holds a successful carrier in Accounting at the university of FIU and a master degree in Finance from Nov Southeastern University. Her experience has been based on the reinsurance industry for more than 10 years.</p>
           </div>
           <div class="item it inter">
             <div class="img-center"><img src="img/avatar3.png" class="img-avatar"/></div>
             <h1 class="avatar-title ours-title">Claudia Ruiz</h1>
             <h3 class="avatar-cargo">TECHNICAL BROKER</h3>
-            <p class="main-content mb-50 justify">As technical broker, Claudia has proved her capacity and has made valuable contribution to ATIS re, she provides support to the team, ensuring client needs and expectations are met, and to coordinate the overall service delivery to agreed technical standards.</p>
+            <p class="main-content mb-50 justify">As Technical Broker, Mrs. Ruiz has proved her capacity and has made valuable contributions to the company, providing support to the operations and taking accountability for the department success, ensuring client’s needs and expectations are always met, and coordinating the overall service delivery to agreed technical standards. In her ongoing profession, Claudia is pursuing to graduate with a second language diploma from MDCC and to get the State License of Insurance for General Lines in Florida.</p>
           </div>
         </div>
       </div>
@@ -68,7 +78,7 @@
         <div class="raya"></div>
       </div>
       <div class="p-container">
-        <p>Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor. Pellentesque non dignissim neque. Ut porta viverra est, ut dignissim elit elementum ut</p>
+        <p>“We are commited to constantly improve ourselves to serve your reinsurance needs excellently”</p>
       </div>
     </div>
   </div>
@@ -77,17 +87,14 @@
     <div class="columns w-full">
       <div class="column is-3">
         <h5 class="foot-title">About Us</h5>
-        <p class="foot-content">Atis re is a fully accredited and licensed Reinsurance Intermediary Broker with a team that has over 70 years of combined experience.   We have the ability to meet and exceed our customers' expectations, and our team is dedicated to provide exceptional customer service tailored to exceed your placements chain needs, all while providing complete consulting service, being innovators, accommodating to any size or complexity, those are only few of the advantage of working with us. </p>
+        <p class="foot-content">Being a full-service and multiline reinsurance intermediary brokers company, ATIS RE provides a valuable support, helping its clients to grow their business, implementing &amp; managing their risk, increasing the profitability of their portfolios through the strategic efforts of their technical experts, and with the support of leading global reinsurers companies.</p>
       </div>
       <div class="column is-9">
         <h5 class="foot-title">Companies we Present  </h5>
         <div class="columns w-full"></div><img src="img/mfoo.png">
         <!--.columns.w-full//+foot([1,2,3,4])
         -->
-        <!--.columns.w-full
-        //+foot([5,6,7,8])
-        
-            
+        <!--.columns.w-full//+foot([5,6,7,8])            
         -->
       </div>
     </div>
