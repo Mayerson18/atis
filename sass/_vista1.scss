@@ -1,5 +1,7 @@
 .main-pretitle{
-  @include textos(em(20px),500,$gris,initial);
+  @include textos(em(22px),500,$gris,initial);
+  color: #3E444B;
+
 }
 
 .main-title{
@@ -8,11 +10,12 @@
 }
 
 .main-content{
-  @include textos(em(17px),normal,$color-p,1.24);
+  @include textos(em(15px),normal,$color-p,1.24);
 }
 
 .ours-title{
   @include textos(em(40px),bold,$negro,initial);
+  color: #224767;
   text-align: center;
 }
 
