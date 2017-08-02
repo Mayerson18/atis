@@ -118,7 +118,7 @@ legend{
 .img-logo{
   position: absolute;
   top: 1px;
-  max-height: 112px;
+  max-height: 96px;
   z-index: 11;
   left: 7%;
 }
@@ -153,6 +153,9 @@ legend{
 
 .img-ati{
   height: 527px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
 }
 
 
@@ -169,6 +172,18 @@ legend{
 }
 
 @media (max-width:768px){
+
+  .img-ati{ height: 70vh;}
+
+  .mov{ margin-bottom: 20px!important; }
+
+  .mv{ padding-left: 0px;}
+
+  .box-contact{
+    width: initial;
+    margin-left: 0px;
+  }
+
   .dropdown-content{
     font-size: 11px;
   }
