@@ -41,5 +41,7 @@ $('#owl-demo').owlCarousel({
    },
 });
 
+
+
 $(".owl-prev").text("");
 $(".owl-next").text("");

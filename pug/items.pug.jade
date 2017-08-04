@@ -9,7 +9,7 @@ mixin items(className,title,content)
     div(class="#{className}")
       .in-fondo
         h2 #{title}
-        p #{content}
+        //p #{content}
         
 each val in items
   +items(val.class,val.title,val.content)
