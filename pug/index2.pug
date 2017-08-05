@@ -61,14 +61,26 @@ include header.pug.jade
             each val in avatar
               +avatar(val.img,val.name,val.cargo,val.p,val.className)
       
-    .parallax
-      .in-parallax
-        h1 NORMA MENJIVAR 
-        h2 CEO & FOUNDER ATIS RE
-        .raya-container
-          .raya
-        .p-container
-          p #{p5}
+    .owl-carousel.owl-theme#parallax
+      .item
+        .parallax
+          .in-parallax
+            h1 NORMA MENJIVAR 
+            h2 CEO & FOUNDER ATIS RE
+            .raya-container
+              .raya
+            .p-container
+              p #{p5}
+      .item
+        .parallax
+          .in-parallax
+            h1 NORMA MENJIVAR 
+            h2 CEO & FOUNDER ATIS RE
+            .raya-container
+              .raya
+            .p-container
+              p #{p5}
+              
     include footer.pug.jade
 
     

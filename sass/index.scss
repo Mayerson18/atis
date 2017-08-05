@@ -174,6 +174,10 @@ legend{
 
 @media (max-width:768px){
 
+  .in-fondo{
+    width: 100%!important;
+  }
+
   .img-ati{ height: 70vh;}
 
   .mov{ margin-bottom: 20px!important; }
@@ -259,4 +263,20 @@ legend{
 
 .in-parallax{
   width: 100%;
+}
+
+.owl-dots{
+  position: absolute;
+  top: 92%;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.in-fondo{
+  width: 50%;
+  text-shadow: 2px 2px 3px #000;
 }

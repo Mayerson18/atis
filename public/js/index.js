@@ -41,6 +41,12 @@ $('#owl-demo').owlCarousel({
    },
 });
 
+$('#parallax').owlCarousel({
+  items: 1,
+  dots:true
+});
+
+$("#parallax").find(".owl-stage-outer").css("width","100%")
 
 
 $(".owl-prev").text("");
